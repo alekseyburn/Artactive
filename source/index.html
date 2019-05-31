@@ -5,12 +5,23 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
   <title>Копицентр «Artactive»</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansitalic.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensanssemibold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/MullerBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/MullerExtraBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/MullerHeavy.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/MullerMedium.woff2" as="font" crossorigin="anonymous">
 </head>
 <body>
   <header class="page-header">
-    <a class="page-header__logo" href="index.html">Artactive</a>
+    <a class="page-header__logo" href="index.html">
+      <img class="page-header__logo-image" src="img/logo@1x.png" width="107" height="13"  alt="Копицентр «Artactive»">
+    </a>
     <button class="page-header__toggle" type="button" aria-label="Отобразить/закрыть меню"></button>
-    <nav class="main-nav">
+    <nav class="main-nav" hidden>
       <ul class="main-nav__list site-list">
         <li class="site-list__item"><a class="site-list__link" href="about.html">О нас</a></li>
         <li class="site-list__item"><a class="site-list__link" href="services.html">Услуги</a></li>

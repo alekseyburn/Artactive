@@ -105,7 +105,8 @@ gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/*.ico",
-    "source/css/*.css"
+    "source/css/*.css",
+    "source/img/**/*"
     ], {
       base: "source"
     })
@@ -139,4 +140,4 @@ gulp.task("refresh", function (done) {
 
 gulp.task("build", gulp.series("clean", "copy", "html", "css", "webp", "images", "sprite", "js"));
 gulp.task("start", gulp.series("build", "server"));
-gulp.task("serv", gulp.series("clean", "copy", "html", "css"));
+gulp.task("server", gulp.series("clean", "copy", "html", "css", "server"));

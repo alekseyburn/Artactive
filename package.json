@@ -24,16 +24,38 @@
     "gulp-svgstore": "^7.0.1",
     "gulp-uglyfly": "^1.4.2",
     "gulp-webp": "^4.0.1",
+    "husky": "^2.3.0",
     "imagemin-mozjpeg": "^8.0.0",
-    "stylelint": "9.10.x",
-    "stylelint-config-htmlacademy": "0.1.x"
+    "lint-staged": "^8.1.7",
+    "prettier": "^1.17.1",
+    "stylelint": "^9.10.1",
+    "stylelint-config-htmlacademy": "0.1.x",
+    "stylelint-config-prettier": "^5.2.0",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-recommended": "^2.2.0",
+    "stylelint-order": "^3.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "linters": {
+      "*.css": [
+        "prettier --write",
+        "stylelint --fix --config ./.stylelintrc-format",
+        "git add"
+      ]
+    }
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
-    "start": "gulp start"
+    "start": "gulp start",
+    "server": "gulp server"
   },
   "browserslist": [
     "last 2 versions",

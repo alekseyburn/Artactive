@@ -18,12 +18,12 @@ img {
 }
 
 body {
-  min-width: $mobile-width;
+  width: $mobile-width;
   margin: 0 auto;
 
   font-weight: normal;
-  font-size: 15px;
-  line-height: 30px;
-  font-family: $font;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: $opensans;
   color: $main-text;
 }
