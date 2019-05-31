@@ -1,7 +1,7 @@
 {
   "rules": {
-    "declaration-block-no-imortant": true,
+    "declaration-block-no-important": true,
     "property-blacklist": ["flex"],
-    "unit-blacklist": ["em", "rem"],
+    "unit-blacklist": ["em", "rem"]
   }
 }
