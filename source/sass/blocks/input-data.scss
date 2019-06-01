@@ -1,0 +1,27 @@
+.input-data__field {
+  width: 100%;
+  padding-right: $mobile-indent;
+  padding-bottom: 7px;
+  padding-left: $mobile-indent;
+
+  font: inherit;
+  font-style: italic;
+
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid $dark-gray;
+
+  &--color {
+    color: $white;
+
+    &::placeholder {
+      color: $white;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    border-bottom-color: $pink;
+    outline: none;
+  }
+}

@@ -1,0 +1,82 @@
+.page-header {
+  padding-bottom: 67px;
+
+  background-color: $purple;
+  background-image: url("../../img/bg-header-mobile@1x.jpg");
+  background-repeat: repeat-y;
+}
+
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 23px $mobile-indent;
+}
+
+.page-header__logo {
+  width: 107px;
+  height: 13px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-header__logo-image {
+  display: block;
+}
+
+.page-header__toggle {
+  position: relative;
+
+  width: 25px;
+  height: 16px;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+    width: 25px;
+    height: 2px;
+
+    background-color: $white;
+    box-shadow: 0 7px 0 0 $white, 0 14px 0 0 $white;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    background-color: $pink-hover;
+    box-shadow: 0 7px 0 0 $pink-hover, 0 14px 0 0 $pink-hover;
+  }
+
+  &:active::before {
+    background-color: $pink-active;
+    box-shadow: 0 7px 0 0 $pink-active, 0 14px 0 0 $pink-active;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .page-header--nojs .site-list {
+    display: block;
+  }
+
+  .page-header--nojs .page-header__toggle {
+    display: none;
+  }
+
+  .page-header--menu-opened .site-list {
+    display: block;
+  }
+}

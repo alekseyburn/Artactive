@@ -1,0 +1,19 @@
+.services {
+  padding: 65px 0;
+
+  background-color: $bg-second;
+}
+
+.services__title {
+  padding: 0 $mobile-indent;
+  margin-bottom: 38px;
+}
+
+.services__list {
+  @include reset-list;
+}
+
+.services__item {
+  margin-bottom: 74px;
+  padding: 0 $mobile-indent;
+}

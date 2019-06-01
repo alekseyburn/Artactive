@@ -1,0 +1,19 @@
+.about {
+  padding: 38px $mobile-indent 55px;
+}
+
+.about__title {
+  margin-bottom: 20px;
+}
+
+.about__subtitle {
+  margin-bottom: 30px;
+}
+
+.about__text {
+  margin-bottom: 23px;
+
+  &:last-of-type {
+    margin-bottom: 33px;
+  }
+}

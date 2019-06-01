@@ -1,0 +1,30 @@
+.page-footer {
+  padding: 40px $mobile-indent 30px;
+
+  background-color: $purple;
+}
+
+.page-footer__policy {
+  display: block;
+  margin-bottom: 30px;
+
+  font-size: 13px;
+  text-align: center;
+  color: $white;
+  text-decoration: underline;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__copyright {
+  font-size: 13px;
+  text-align: center;
+  color: $white;
+}

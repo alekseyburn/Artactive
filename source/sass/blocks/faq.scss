@@ -1,0 +1,29 @@
+.faq {
+  padding: 0 $mobile-indent 80px;
+}
+
+.faq__title {
+  margin-bottom: 30px;
+}
+
+.faq__list {
+  @include reset-list;
+
+  margin-bottom: 55px;
+}
+
+.faq__item {
+  margin-bottom: 30px;
+}
+
+.faq__subtitle {
+  margin-bottom: 20px;
+
+  font-weight: 600;
+  font-size: 20px;
+  font-family: $opensans;
+}
+
+.faq__item:last-of-type {
+  margin: 0;
+}

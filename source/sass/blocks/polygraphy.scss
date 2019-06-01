@@ -1,0 +1,18 @@
+.polygraphy {
+  margin-bottom: 0;
+  padding-top: 70px;
+  padding-bottom: 275px;
+
+  background-color: $bg-second;
+  background-image: url("../../img/picture-letters-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.polygraphy__subtitle {
+  margin-bottom: 40px;
+}
+
+.polygraphy__text:not(:last-of-type) {
+  margin-bottom: 25px;
+}

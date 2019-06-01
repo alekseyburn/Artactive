@@ -1,0 +1,43 @@
+.promo {
+  padding: 322px $mobile-indent 0;
+
+  font-family: $muller;
+  color: $white;
+
+  background-image: url("../../img/print-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 0 -16px;
+}
+
+.promo__slogan {
+  display: block;
+  margin-bottom: 25px;
+
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.promo__title {
+  margin: 0 0 43px;
+
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+}
+
+.promo__link {
+  margin-bottom: 25px;
+}
+
+.promo__text {
+  display: block;
+  margin: 0;
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: $opensans;
+}
