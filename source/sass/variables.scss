@@ -3,15 +3,22 @@ $black: #000000;
 $main-text: #5e606a;
 $bg-color: #8b3cd5;
 $pink: #fb0275;
+$pink-hover: #fd4196;
+$pink-active: #a3014b;
 $purple: #7f38bd;
+$purple-hover: #4e1483;
+$purple-active: #bb8de5;
 $gray: #383d52;
 $blue: #3594dd;
+$bg-second: #faf8fb;
+$dark-gray: #b5aeb9;
+$light-gray: #e2dbe7;
 
 
 $opensans: "Open Sans", "Arial", sans-serif;
 $muller: "Muller", "Arial", sans-serif;
 
-$mobile-indent: 30px; //используется для отступов (margin-bottom, padding слева и справа)
+$mobile-indent: 15px; //используется для отступов (margin-bottom, padding слева и справа)
 $tablet-indent: 50px;
 
 $mobile-width: 320px;

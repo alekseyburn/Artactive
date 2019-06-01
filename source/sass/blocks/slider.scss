@@ -1,0 +1,29 @@
+.slider {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 32px;
+}
+
+.slider__btn {
+  display: block;
+  width: 91px;
+  height: 14px;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:hover .slider__btn-icon,
+  &:focus .slider__btn-icon {
+    fill: $purple-hover;
+  }
+
+  &:active .slider__btn-icon {
+    fill: $purple-active;
+  }
+}
+
+.slider__btn-icon {
+  fill: $purple;
+}

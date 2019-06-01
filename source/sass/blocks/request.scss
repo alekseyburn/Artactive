@@ -1,0 +1,32 @@
+.request {
+  margin-bottom: 0;
+  padding-top: 35px;
+
+  &--faq {
+    padding: 37px 22px 70px;
+
+    color: $white;
+
+    background-color: $purple;
+    background-image: url("../../img/shape-question-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    border-radius: 10px;
+    box-shadow: 0 23px 32px rgba(81, 8, 86, 0.33);
+  }
+}
+
+.request__question {
+  display: block;
+
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.request__text {
+  margin: 0 0 27px;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+}

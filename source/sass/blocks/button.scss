@@ -1,0 +1,26 @@
+.button {
+  display: block;
+  width: 100%;
+  padding: 12px 0;
+
+  font-weight: bold;
+  font-size: 16px;
+  font-family: $opensans;
+  text-align: center;
+  color: $white;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  background-color: $pink;
+  border: none;
+  border-radius: 24px;
+
+  &:hover,
+  &:focus {
+    background-color: $pink-hover;
+  }
+
+  &:active {
+    background-color: $pink-active;
+  }
+}

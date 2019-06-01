@@ -1,0 +1,20 @@
+.order {
+  padding: 25px 23px 28px;
+
+  color: $white;
+
+  background-color: $purple;
+  border-radius: 10px;
+  box-shadow: 0 23px 32px rgba(81, 8, 86, 0.33);
+}
+
+.order__question {
+  font-size: 13px;
+}
+
+.order__text {
+  margin: 0 0 30px;
+
+  font-weight: 600;
+  font-size: 16px;
+}

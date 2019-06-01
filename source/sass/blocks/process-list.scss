@@ -1,0 +1,53 @@
+.process-list {
+  @include reset-list;
+
+  display: flex;
+  flex-direction: column;
+
+  background-image: url("../../img/bg-arrows-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 100px 75px;
+}
+
+.process-list__item {
+  width: 130px;
+
+  background-repeat: no-repeat;
+  background-position: center top;
+
+  &--book {
+    align-self: center;
+    margin-bottom: 45px;
+
+    background-image: url("../../img/ebook-mobile@1x.png");
+  }
+
+  &--tablet {
+    align-self: flex-end;
+    margin-bottom: -74px;
+
+    background-image: url("../../img/tablet-mobile@1x.png");
+  }
+
+  &--tape {
+    align-self: flex-start;
+    margin-bottom: 51px;
+
+    background-image: url("../../img/writer-mobile@1x.png");
+  }
+
+  &--car {
+    align-self: center;
+
+    background-image: url("../../img/car-mobile@1x.png");
+  }
+}
+
+.process-list__text {
+  margin: 0;
+  padding-top: 116px;
+
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+}

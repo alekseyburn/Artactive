@@ -16,12 +16,14 @@
   <link rel="preload" href="fonts/MullerMedium.woff2" as="font" crossorigin="anonymous">
 </head>
 <body>
-  <header class="page-header">
-    <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" src="img/logo@1x.png" width="107" height="13"  alt="Копицентр «Artactive»">
-    </a>
-    <button class="page-header__toggle" type="button" aria-label="Отобразить/закрыть меню"></button>
-    <nav class="main-nav" hidden>
+  <header class="page-header page-header--nojs">
+    <div class="page-header__wrapper">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="img/logo@1x.png" width="107" height="13" alt="Копицентр «Artactive»">
+      </a>
+      <button class="page-header__toggle" type="button" aria-label="Отобразить/закрыть меню"></button>
+    </div>
+    <nav class="main-nav">
       <ul class="main-nav__list site-list">
         <li class="site-list__item"><a class="site-list__link" href="about.html">О нас</a></li>
         <li class="site-list__item"><a class="site-list__link" href="services.html">Услуги</a></li>
@@ -31,44 +33,46 @@
       </ul>
     </nav>
     <section class="promo">
-      <b class="promo__slogan">Размер не имеет значения!</b>
-      <h1 class="promo__title">Оперативная полиграфия и широкоформатная печать любого размера</h1>
+      <b class="promo__slogan">Размер не&nbsp;имеет значения!</b>
+      <h1 class="promo__title">Оперативная полиграфия и&nbsp;широкоформатная печать любого размера</h1>
       <a class="promo__link button" href="order.html">Заказать печать</a>
-      <small class="promo__text">с доставкой по Ярославлю и Ярославской области</small>
+      <small class="promo__text">с доставкой по Ярославлю и&nbsp;Ярославской области</small>
     </section>
   </header>
   <main class="page-main">
-    <section class="about section">
-      <h2 class="about__title section__title">1. О нас</h2>
-      <p class="about__subtitle section__subtitle">Полный спектр услуг — от дизайна до печати</p>
-      <p class="about__text section__text">К вашим услугам мы предлагаем полный спектр работ, начиная от печати
+    <section class="section about">
+      <h2 class="section__title about__title">1. О нас</h2>
+      <p class="section__subtitle section__subtitle--about about__subtitle">Полный спектр услуг — от дизайна до
+        печати</p>
+      <p class="section__text about__text">К вашим услугам мы предлагаем полный спектр работ, начиная от печати
         открыток, чертежей, баннеров, растяжек, создания буклетов и эксклюзивных календарей, и заканчивая постпечатной
         обработкой.</p>
-      <p class="about__text section__text">В копицентре не просто предоставляют услуги печати: мы ориентируемся на
+      <p class="section__text about__text">В копицентре не просто предоставляют услуги печати: мы ориентируемся на
         комплексное обслуживание. Все услуги, будь то оперативная цифровая печать открыток или разработка серии
         календарей, Вы можете получить в одном месте, воспользовавшись сопутствующими услугами копицентра.</p>
-      <p class="about__text section__text">При этом работа выполняется в максимально сжатые сроки и не в ущерб качеству
+      <p class="section__text about__text">При этом работа выполняется в максимально сжатые сроки и не в ущерб качеству
         конечного результата, которое неизменно остается на высоте.</p>
       <ul class="about__list process-list">
-        <li class="process-list__item">
+        <li class="process-list__item process-list__item--book">
           <p class="process-list__text">Приём и детальное обсуждение заказа</p>
         </li>
-        <li class="process-list__item">
+        <li class="process-list__item process-list__item--tablet">
           <p class="process-list__text">Создание и согласование дизайн-макета</p>
         </li>
-        <li class="process-list__item">
+        <li class="process-list__item process-list__item--tape">
           <p class="process-list__text">Печать и постпечатная обработка изделий любых размеров</p>
         </li>
-        <li class="process-list__item">
+        <li class="process-list__item process-list__item--car">
           <p class="process-list__text">Доставка готовой продукции</p>
         </li>
       </ul>
     </section>
-    <section class="services section">
-      <h2 class="services__title section__title">2. Услуги</h2>
+    <section class="section services">
+      <h2 class="section__title section__title--services services__title">2. Услуги</h2>
       <ul class="services__list">
         <li class="services__item banners">
-          <h3 class="banners__subtitle section__subtitle">Широкоформатная печать баннеров, растяжек, афиш</h3>
+          <h3 class="section__subtitle section__subtitle--services banners__subtitle">Широкоформатная печать баннеров,
+            растяжек, афиш</h3>
           <ul class="banners__list">
             <li class="banners__item">подготовка макетов к печати, дизайн рекламных баннеров</li>
             <li class="banners__item">срочная печать за 3 часа</li>
@@ -78,12 +82,16 @@
             <li class="banners__item">доставка баннеров</li>
           </ul>
           <figure class="banners__img-wrapper">
-            <img class="banners__img" src="/" alt="Растяжка на ул. Ленина">
+            <img class="banners__img" src="img/photo-banner-mobile@1x.jpg" width="291" height="196" alt="Растяжка на ул. Ленина">
             <figcaption class="banners__caption">Растяжка на ул. Ленина</figcaption>
           </figure>
           <div class="banners__btn-wrapper slider">
-            <button class="slider__btn slider__btn--prev" type="button" aria-label="Предыдущее фото"></button>
-            <button class="slider__btn slider__btn--next" type="button" aria-label="Следующее фото"></button>
+            <button class="slider__btn slider__btn--prev" type="button" aria-label="Предыдущее фото">
+              <svg class="slider__btn-icon" width="91" height="14"><use xlink:href="../img/sprite.svg#icon-left-arrow"></use></svg>
+            </button>
+            <button class="slider__btn slider__btn--next" type="button" aria-label="Следующее фото">
+              <svg class="slider__btn-icon" width="91" height="14"><use xlink:href="../img/sprite.svg#icon-right-arrow"></use></svg>
+            </button>
           </div>
           <div class="banners__order order">
             <i class="order__question">Есть вопросы?</i>
@@ -92,42 +100,34 @@
           </div>
         </li>
         <li class="services__item interior">
-          <h3 class="interior__subtitle section__subtitle">Широкоформатная печать для вашего интерьера</h3>
-          <p class="interior__text section__text">Печатаем широкоформатные фотографии на глянцевой и матовой фотобумаге
+          <h3 class="section__subtitle section__subtitle--interior interior__subtitle">Широкоформатная печать для вашего
+            интерьера</h3>
+          <p class="section__text interior__text">Печатаем&nbsp;широкоформатные&nbsp;фотографии на глянцевой и матовой
+            фотобумаге
             разной плотности, на глянцевом и матовом холсте или на самоклеющейся пленке. также можем предложить
             обработку и редактирование ваших фотографий силами наших дизайнеров: композиции, фотоколлаж, ретушь,
             различные эффекты</p>
           <a class="interior__link button" href="order.html">Оставить заявку</a>
         </li>
         <li class="services__item polygraphy">
-          <h3 class="polygraphy__subtitle section__subtitle">Оперативная полиграфия — от визитки до баннера</h3>
-          <p class="polygraphy__text section__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          <h3 class="section__subtitle section__subtitle--polygraphy polygraphy__subtitle">Оперативная полиграфия&nbsp;—&nbsp;от&nbsp;визитки до баннера</h3>
+          <p class="section__text polygraphy__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
             exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-            in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-          <p class="polygraphy__text section__text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error.</p>
+            in voluptate velit esse&nbsp;cillum dolore eu fugiat nulla pariatur.</p>
+          <p class="section__text polygraphy__text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum. Sed ut perspicia-tis unde omnis iste natus error.</p>
         </li>
         <li class="services__item request">
           <h3 class="visually-hidden">Форма для заказа</h3>
           <i class="request__question">Есть вопросы?</i>
-          <p class="request__text">Оставьте заявку на консультацию</p>
+          <p class="request__text">Оставьте заявку на&nbsp;консультацию</p>
           <form class="form" action="https://echo.htmlacademy.ru" method="post">
             <label class="form__label input-data">
-              <input class="input-data__field"
-                     type="text"
-                     name="name"
-                     placeholder="Имя"
-                     aria-label="Имя"
-                     required>
+              <input class="input-data__field" type="text" name="name" placeholder="Имя" aria-label="Имя" required>
             </label>
             <label class="form__label input-data">
-              <input class="input-data__field"
-                     type="tel"
-                     name="phone"
-                     placeholder="Телефон"
-                     aria-label="Телефон"
-                     required>
+              <input class="input-data__field" type="tel" name="phone" placeholder="Телефон" aria-label="Телефон" required>
             </label>
             <button class="form__send button" type="submit">Отправить</button>
           </form>
@@ -138,7 +138,7 @@
       <h2 class="visually-hidden">Отзывы</h2>
       <div class="reviews__wrapper">
         <blockquote class="reviews__item">
-          <img class="reviews__img" src="/" alt="Фото ревьювера">
+          <img class="reviews__img" src="img/photo-author-mobile@1x.png" width="136" height="136" alt="Фото ревьювера">
           <p class="reviews__text">Обратился в компанию АртАктив за визитками. Это мой первый опыт, поэтому немного
             нервничал, не знал, с чего начать. Остался доволен, потому что мне всё объяснили, показали и сделали по
             высшему разряду. Советую!</p>
@@ -146,74 +146,68 @@
           <a class="reviews__author-link" href="vk.com/mr.sharp">vk.com/mr.sharp</a>
         </blockquote>
         <div class="reviews__btn-wrapper slider">
-          <button class="slider__btn slider__btn--prev" type="button" aria-label="Предыдущий отзыв"></button>
-          <button class="slider__btn slider__btn--next" type="button" aria-label="Следующий отзыв"></button>
+          <button class="slider__btn slider__btn--prev" type="button" aria-label="Предыдущий отзыв">
+            <svg class="slider__btn-icon" width="91" height="14"><use xlink:href="../img/sprite.svg#icon-left-arrow"></use></svg>
+          </button>
+          <button class="slider__btn slider__btn--next" type="button" aria-label="Следующий отзыв">
+            <svg class="slider__btn-icon" width="91" height="14"><use xlink:href="../img/sprite.svg#icon-right-arrow"></use></svg>
+          </button>
         </div>
       </div>
     </section>
-    <section class="faq section">
-      <h2 class="faq__title section__title">3. Частые вопросы (FAQ)</h2>
+    <section class="section faq">
+      <h2 class="section__title faq__title">3. Частые вопросы (FAQ)</h2>
       <ul class="faq__list">
         <li class="faq__item">
-          <h3 class="faq__subtitle section__subtitle">Что такое макет?</h3>
-          <p class="faq__text section__text">Макет — это будущее печатное изделие в электронном формате. Верстают
+          <h3 class="section__subtitle faq__subtitle">Что такое макет?</h3>
+          <p class="section__text faq__text">Макет — это будущее печатное изделие в электронном формате. Верстают
             (собирают) макет в специализированном программном обеспечении.</p>
         </li>
         <li class="faq__item">
-          <h3 class="faq__subtitle section__subtitle">У меня есть готовый макет</h3>
-          <p class="faq__text section__text">Вы можете привезти его к нам в офис на любом удобном для вас носителе
+          <h3 class="section__subtitle faq__subtitle">У меня есть готовый макет</h3>
+          <p class="section__text faq__text">Вы можете привезти его к нам в офис на любом удобном для вас носителе
             (диск, флешка). В присутствии вас мы обработаем ваш макет и отправим его в производство.</p>
         </li>
         <li class="faq__item">
-          <h3 class="faq__subtitle section__subtitle">У меня нет макета</h3>
-          <p class="faq__text section__text">В нашем штате работают професиональные дизайнеры, которые с ваших слов или
+          <h3 class="section__subtitle faq__subtitle">У меня нет макета</h3>
+          <p class="section__text faq__text">В нашем штате работают професиональные дизайнеры, которые с ваших слов или
             в вашем присутствии сверстают макет, который после утверждения также будет отправлен в печать.</p>
         </li>
         <li class="faq__item">
-          <h3 class="faq__subtitle section__subtitle">Сколько времени занимает печать?</h3>
-          <p class="faq__text section__text">В том случае если изображение готово к печати, изготовление занимает около
-            3 часов. Также время изготовления зависит от нашей загруженности.</p>
+          <h3 class="section__subtitle faq__subtitle">Сколько времени занимает печать?</h3>
+          <p class="section__text faq__text">В том случае если изображение готово к печати, изготовление занимает около
+            3 часов. Также время изготовления зависит&nbsp;от нашей загруженности.</p>
         </li>
         <li class="faq__item">
-          <h3 class="faq__subtitle section__subtitle">Я не могу приехать к вам в офис</h3>
-          <p class="faq__text section__text">Отправьте нам изображение по электронной почте, укажите свой телефон. Мы
+          <h3 class="section__subtitle faq__subtitle">Я не могу приехать к вам в&nbsp;офис</h3>
+          <p class="section__text faq__text">Отправьте нам изображение по электронной почте, укажите свой телефон. Мы
             свяжемся с вами для уточнения деталей. Готовое изделие мы доставим вам курьером.</p>
         </li>
         <li class="faq__item">
-          <h3 class="faq__subtitle section__subtitle">Вызов курьера бесплатный?</h3>
-          <p class="faq__text section__text">В зависимости от соимости заказа, курьер может доставить вам продукцию
-            бесплатно (при соимости от 600 руб.) или от 150 руб. в пределах Ярославля и до 500 руб. в пределах
+          <h3 class="section__subtitle faq__subtitle">Вызов курьера бесплатный?</h3>
+          <p class="section__text faq__text">В зависимости от соимости заказа, курьер&nbsp;может доставить вам продукцию
+            бесплатно (при соимости от 600 руб.) или от 150 руб. в пределах Ярославля и до 500&nbsp;руб. в пределах
             Ярославской области.</p>
         </li>
       </ul>
       <div class="faq__form request request--faq">
         <h3 class="visually-hidden">Форма для заказа</h3>
         <i class="request__question">Остались вопросы?</i>
-        <p class="request__text">Оставьте заявку на консультацию</p>
+        <p class="request__text">Оставьте заявку на&nbsp;консультацию</p>
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
           <label class="form__label input-data">
-            <input class="input-data__field"
-                   type="text"
-                   name="name"
-                   placeholder="Имя"
-                   aria-label="Имя"
-                   required>
+            <input class="input-data__field input-data__field--color" type="text" name="name" placeholder="Имя" aria-label="Имя" required>
           </label>
           <label class="form__label input-data">
-            <input class="input-data__field"
-                   type="tel"
-                   name="phone"
-                   placeholder="Телефон"
-                   aria-label="Телефон"
-                   required>
+            <input class="input-data__field input-data__field--color" type="tel" name="phone" placeholder="Телефон" aria-label="Телефон" required>
           </label>
           <button class="form__send button" type="submit">Отправить</button>
         </form>
       </div>
     </section>
-    <section class="contacts section">
+    <section class="section contacts">
       <div class="contacts__wrapper">
-        <h2 class="contacts__title section__title">4. Контакты</h2>
+        <h2 class="section__title contacts__title">4. Контакты</h2>
         <ul class="contacts__list">
           <li class="contacts__item contacts__item--address">
             <address class="contacts__address">г. Ярославль, проспект Октября, 88</address>
@@ -229,7 +223,7 @@
       <div class="contacts__map map">
         <iframe class="map__widget" src="https://yandex.ru/map-widget/v1/-/CCvu6Cii" width="320" height="457"
                 allowfullscreen></iframe>
-        <img class="map__img" src="/" alt="г. Ярославль, проспект Октября, 88">
+        <img class="map__img" src="img/map-mobile@1x.jpg" width="320" height="532" alt="г. Ярославль, проспект Октября, 88">
       </div>
     </section>
     <footer class="page-footer">
@@ -237,5 +231,6 @@
       <p class="page-footer__copyright">ООО «АртАктив», 2017 ©</p>
     </footer>
   </main>
+  <script src="js/navmenu.min.js"></script>
 </body>
 </html>

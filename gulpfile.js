@@ -140,4 +140,4 @@ gulp.task("refresh", function (done) {
 
 gulp.task("build", gulp.series("clean", "copy", "html", "css", "webp", "images", "sprite", "js"));
 gulp.task("start", gulp.series("build", "server"));
-gulp.task("server", gulp.series("clean", "copy", "html", "css", "server"));
+gulp.task("server", gulp.series("clean", "copy", "html", "css", "js", "server"));
