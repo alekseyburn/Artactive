@@ -1,12 +1,17 @@
 .interior {
   margin-bottom: 0;
-  padding-bottom: 252px;
   padding-top: 70px;
+  padding-bottom: 252px;
 
   background-color: $white;
-  background-image: url("../../img/photo-sofa-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-position: right bottom;
+  background-image: url("../img/photo-sofa-mobile@1x.png"), url("../img/bg-lines-mobile@1x.png");
+  background-repeat: no-repeat, repeat-y;
+  background-position: right bottom, center;
+  background-size: 281px, contain;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/photo-sofa-mobile@2x.png"), url("../img/bg-lines-mobile@2x.png");
+  }
 }
 
 .interior__subtitle {

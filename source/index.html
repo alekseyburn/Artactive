@@ -19,7 +19,11 @@
   <header class="page-header page-header--nojs">
     <div class="page-header__wrapper">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logo@1x.png" width="107" height="13" alt="Копицентр «Artactive»">
+        <picture>
+          <source type="image/webp" srcset="../img/logo@1x.webp 1x, ../img/logo@2x.webp 2x">
+
+          <img class="page-header__logo-image" src="../img/logo@1x.png" srcset="../img/logo@2x.png 2x" alt="Копицентр «Artactive»">
+        </picture>
       </a>
       <button class="page-header__toggle" type="button" aria-label="Отобразить/закрыть меню"></button>
     </div>
@@ -82,7 +86,10 @@
             <li class="banners__item">доставка баннеров</li>
           </ul>
           <figure class="banners__img-wrapper">
-            <img class="banners__img" src="img/photo-banner-mobile@1x.jpg" width="291" height="196" alt="Растяжка на ул. Ленина">
+            <picture>
+              <source type="image/webp" srcset="../img/photo-banner-mobile@1x.webp 1x, ../img/photo-banner-mobile@2x.webp 2x">
+              <img class="banners__img" src="../img/photo-banner-mobile@1x.jpg" srcset="../img/photo-banner-mobile@2x.jpg 2x" alt="Растяжка на ул. Ленина">
+            </picture>
             <figcaption class="banners__caption">Растяжка на ул. Ленина</figcaption>
           </figure>
           <div class="banners__btn-wrapper slider">
@@ -138,7 +145,10 @@
       <h2 class="visually-hidden">Отзывы</h2>
       <div class="reviews__wrapper">
         <blockquote class="reviews__item">
-          <img class="reviews__img" src="img/photo-author-mobile@1x.png" width="136" height="136" alt="Фото ревьювера">
+          <picture>
+            <source type="image/webp" srcset="../img/photo-author-mobile@1x.webp 1x, ../img/photo-author-mobile@2x.webp 2x">
+            <img class="reviews__img" src="../img/photo-author-mobile@1x.png" srcset="../img/photo-author-mobile@2x.png 2x" alt="Фото ревьювера">
+          </picture>
           <p class="reviews__text">Обратился в компанию АртАктив за визитками. Это мой первый опыт, поэтому немного
             нервничал, не знал, с чего начать. Остался доволен, потому что мне всё объяснили, показали и сделали по
             высшему разряду. Советую!</p>
@@ -221,9 +231,11 @@
         </ul>
       </div>
       <div class="contacts__map map">
-        <iframe class="map__widget" src="https://yandex.ru/map-widget/v1/-/CCvu6Cii" width="320" height="457"
-                allowfullscreen></iframe>
-        <img class="map__img" src="img/map-mobile@1x.jpg" width="320" height="532" alt="г. Ярославль, проспект Октября, 88">
+        <iframe class="map__widget" src="https://yandex.ru/map-widget/v1/-/CCvu6Cii" width="320" height="457" allowfullscreen></iframe>
+        <picture>
+          <source type="image/webp" srcset="../img/map-mobile@1x.webp 1x, ../img/map-mobile@2x.webp 2x">
+          <img class="map__img" src="../img/map-mobile@1x.jpg" srcset="../img/map-mobile@2x.jpg 2x" alt="г. Ярославль, проспект Октября, 88">
+        </picture>
       </div>
     </section>
     <footer class="page-footer">
