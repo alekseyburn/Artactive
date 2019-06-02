@@ -8,11 +8,16 @@
     color: $white;
 
     background-color: $purple;
-    background-image: url("../../img/shape-question-mobile@1x.png");
+    background-image: url("../img/shape-question-mobile@1x.png");
     background-repeat: no-repeat;
     background-position: top right;
+    background-size: 96px;
     border-radius: 10px;
     box-shadow: 0 23px 32px rgba(81, 8, 86, 0.33);
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/shape-question-mobile@2x.png");
+    }
   }
 }
 

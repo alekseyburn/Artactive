@@ -2,8 +2,13 @@
   padding-bottom: 67px;
 
   background-color: $purple;
-  background-image: url("../../img/bg-header-mobile@1x.jpg");
+  background-image: url("../img/bg-header-mobile@1x.jpg");
   background-repeat: repeat-y;
+  background-size: contain;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-header-mobile@2x.jpg");
+  }
 }
 
 .page-header__wrapper {

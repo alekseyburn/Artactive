@@ -4,9 +4,14 @@
   display: flex;
   flex-direction: column;
 
-  background-image: url("../../img/bg-arrows-mobile@1x.png");
+  background-image: url("../img/bg-arrows-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: 100px 75px;
+  background-size: 154px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-arrows-mobile@2x.png");
+  }
 }
 
 .process-list__item {
@@ -14,32 +19,49 @@
 
   background-repeat: no-repeat;
   background-position: center top;
+  background-size: 110px;
 
   &--book {
     align-self: center;
     margin-bottom: 45px;
 
-    background-image: url("../../img/ebook-mobile@1x.png");
+    background-image: url("../img/ebook-mobile@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/ebook-mobile@2x.png");
+    }
   }
 
   &--tablet {
     align-self: flex-end;
     margin-bottom: -74px;
 
-    background-image: url("../../img/tablet-mobile@1x.png");
+    background-image: url("../img/tablet-mobile@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/tablet-mobile@2x.png");
+    }
   }
 
   &--tape {
     align-self: flex-start;
     margin-bottom: 51px;
 
-    background-image: url("../../img/writer-mobile@1x.png");
+    background-image: url("../img/writer-mobile@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/writer-mobile@2x.png");
+    }
   }
 
   &--car {
     align-self: center;
 
-    background-image: url("../../img/car-mobile@1x.png");
+    background-image: url("../img/car-mobile@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/car-mobile@2x.png");
+    }
   }
 }
 

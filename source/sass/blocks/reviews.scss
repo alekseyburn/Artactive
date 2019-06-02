@@ -1,11 +1,21 @@
 .reviews {
-  margin: 35px $mobile-indent 57px;
+  padding: 35px $mobile-indent 57px;
+
+  background-image: url("../img/bg-lines-mobile@1x.png");
+  background-repeat: repeat-y;
+  background-position: center center;
+  background-size: contain;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-lines-mobile@2x.png");
+  }
 }
 
 .reviews__item {
   margin: 0 0 45px;
   padding: 60px 22px 45px;
 
+  background-color: $white;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(81, 8, 86, 0.1);
 }

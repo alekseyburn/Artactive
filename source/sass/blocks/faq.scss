@@ -1,5 +1,14 @@
 .faq {
   padding: 0 $mobile-indent 80px;
+
+  background-image: url("../img/bg-lines-mobile@1x.png");
+  background-repeat: repeat-y;
+  background-position: center center;
+  background-size: contain;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-lines-mobile@2x.png");
+  }
 }
 
 .faq__title {

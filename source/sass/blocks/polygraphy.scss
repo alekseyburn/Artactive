@@ -4,9 +4,14 @@
   padding-bottom: 275px;
 
   background-color: $bg-second;
-  background-image: url("../../img/picture-letters-mobile@1x.png");
+  background-image: url("../img/picture-letters-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center bottom;
+  background-size: 304px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/picture-letters-mobile@2x.png");
+  }
 }
 
 .polygraphy__subtitle {
