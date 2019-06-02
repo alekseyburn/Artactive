@@ -26,4 +26,8 @@ body {
   line-height: 24px;
   font-family: $opensans;
   color: $main-text;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
 }
