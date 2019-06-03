@@ -1,23 +1,54 @@
 .polygraphy {
   margin-bottom: 0;
   padding-top: 70px;
-  padding-bottom: 275px;
+  padding-bottom: 0;
 
   background-color: $bg-second;
-  background-image: url("../img/picture-letters-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: 304px;
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/picture-letters-mobile@2x.png");
-  }
 }
 
 .polygraphy__subtitle {
   margin-bottom: 40px;
 }
 
-.polygraphy__text:not(:last-of-type) {
+.polygraphy__text {
   margin-bottom: 25px;
+}
+
+.polygraphy__img {
+  display: block;
+  margin-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .polygraphy {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 105px;
+    padding-bottom: 120px;
+  }
+
+  .polygraphy__subtitle {
+    width: 438px;
+  }
+
+  .polygraphy__text {
+    width: 642px;
+
+    &:last-of-type {
+      margin-bottom: 66px;
+    }
+  }
+
+  .polygraphy__picture {
+    position: absolute;
+    right: 0;
+    bottom: 60px;
+
+    order: 3;
+    width: 353px;
+  }
+
+  .polygraphy__img {
+    margin-bottom: 0;
+  }
 }

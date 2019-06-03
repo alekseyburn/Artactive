@@ -5,8 +5,8 @@
 }
 
 .services__title {
-  padding: 0 $mobile-indent;
   margin-bottom: 38px;
+  padding: 0 $mobile-indent;
 }
 
 .services__list {
@@ -16,4 +16,24 @@
 .services__item {
   margin-bottom: 74px;
   padding: 0 $mobile-indent;
+}
+
+@media (min-width: $tablet-width) {
+  .services {
+    padding: 77px 0 0;
+  }
+
+  .services__title {
+    margin-bottom: 60px;
+    padding: 0 $tablet-indent;
+  }
+
+  .services__list {
+    position: relative;
+  }
+
+  .services__item {
+    margin-bottom: 65px;
+    padding: 0 $tablet-indent;
+  }
 }

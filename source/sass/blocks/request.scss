@@ -1,6 +1,5 @@
 .request {
   margin-bottom: 0;
-  padding-top: 35px;
 
   &--faq {
     padding: 37px 22px 70px;
@@ -34,4 +33,47 @@
   font-weight: 600;
   font-size: 20px;
   line-height: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .request {
+    position: relative;
+
+    width: 240px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: -120px;
+      bottom: -5px;
+
+      width: 389px;
+      height: 287px;
+
+      background-image: url("../img/picture-letter@1x.png");
+    }
+
+    &--faq {
+      width: 100%;
+      padding: 37px 33px 25px;
+
+      background-image: url("../img/shape-question-tablet@1x.png");
+      background-position: 105% -60px;
+      background-size: 241px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/shape-question-tablet@2x.png");
+      }
+
+      &::after {
+        content: none;
+      }
+    }
+  }
+
+  .request__text {
+    &--faq {
+      margin-bottom: 25px;
+    }
+  }
 }

@@ -67,9 +67,37 @@
 
 .process-list__text {
   margin: 0;
-  padding-top: 116px;
+  padding-top: 118px;
 
   font-size: 13px;
   line-height: 18px;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .process-list {
+    background-image: url("../img/bg-arrows-tablet@1x.png");
+    background-position: 115px 60px;
+    background-size: 484px;
+  }
+
+  .process-list__item {
+    width: 170px;
+
+    &--book {
+      align-self: flex-start;
+      margin-bottom: -55px;
+      margin-left: 160px;
+    }
+
+    &--tablet {
+      margin-bottom: -70px;
+    }
+
+    &--car {
+      align-self: flex-end;
+      margin-top: -105px;
+      margin-right: 190px;
+    }
+  }
 }

@@ -24,7 +24,22 @@
 }
 
 .page-footer__copyright {
+  margin: 0;
+
   font-size: 13px;
   text-align: center;
   color: $white;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px $tablet-indent;
+  }
+
+  .page-footer__policy {
+    order: 2;
+    margin-bottom: 0;
+  }
 }

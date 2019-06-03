@@ -48,7 +48,7 @@
     left: auto;
 
     width: 300px;
-    min-height: 600px;
+    min-height: 602px;
     padding: 40px 65px;
 
     &::before {
@@ -60,7 +60,7 @@
       z-index: -1;
 
       display: block;
-      width: $tablet-width;
+      width: $tablet-width - 300px;
 
       background-color: rgba($black, 0.4);
     }
