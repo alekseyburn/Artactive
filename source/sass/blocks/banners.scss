@@ -2,6 +2,28 @@
   margin-bottom: 39px;
 }
 
+.banners__list {
+  @include reset-list;
+
+  margin-bottom: 35px;
+}
+
+.banners__item {
+  line-height: 24px;
+
+  &::before {
+    content: ".";
+    position: relative;
+    top: -5px;
+
+    padding-right: 5px;
+  }
+}
+
+.banners__wrapper {
+  margin: 0 0 25px;
+}
+
 .banners__img-wrapper {
   margin: 0 0 25px;
 }
@@ -20,4 +42,43 @@
 
 .banners__btn-wrapper {
   margin-bottom: 42px;
+}
+
+@media (min-width: $tablet-width) {
+  .banners__subtitle {
+    width: 595px;
+    margin-bottom: 50px;
+  }
+
+  .banners__list {
+    margin-bottom: 45px;
+  }
+
+  .banners__wrapper {
+    position: relative;
+
+    margin-bottom: 47px;
+  }
+
+  .banners__img-wrapper {
+    margin: 0;
+  }
+
+  .banners__img {
+    width: 720px;
+    height: auto;
+    margin-bottom: 35px;
+  }
+
+  .banners__caption {
+    text-align: right;
+  }
+
+  .banners__btn-wrapper {
+    position: absolute;
+    bottom: -40px;
+
+    width: 225px;
+    padding: 0;
+  }
 }

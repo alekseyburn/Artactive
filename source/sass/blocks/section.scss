@@ -11,6 +11,7 @@
 .section__subtitle {
   position: relative;
   z-index: 1;
+
   margin: 0;
 
   font-weight: 500;
@@ -42,9 +43,18 @@
 
   &--polygraphy::before {
     content: "3";
+    top: 40%;
+    left: 5%;
   }
 }
 
 .section__text {
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .section__subtitle {
+    font-size: 32px;
+    line-height: 40px;
+  }
 }

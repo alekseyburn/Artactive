@@ -3,12 +3,16 @@
 
   background-image: url("../img/bg-lines-mobile@1x.png");
   background-repeat: repeat-y;
-  background-position: center center;
-  background-size: contain;
+  background-position: center;
+  background-size: cover;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-lines-mobile@2x.png");
   }
+}
+
+.reviews__title {
+  display: none;
 }
 
 .reviews__item {
@@ -36,4 +40,44 @@
   line-height: 30px;
   color: $gray;
   font-style: normal;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    padding: 75px $tablet-indent 78px;
+
+    background-image: url("../img/bg-lines-tablet@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-lines-tablet@2x.png");
+    }
+  }
+
+  .reviews__title {
+    display: block;
+    margin-bottom: 55px;
+  }
+
+  .reviews__item {
+    margin-bottom: 55px;
+    padding: 60px 63px 45px;
+  }
+
+  .reviews__img {
+    float: left;
+    margin-right: 50px;
+  }
+
+  .reviews__text {
+    margin-bottom: 0;
+  }
+
+  .reviews__author-link {
+    display: block;
+  }
+
+  .reviews__btn-wrapper {
+    width: 225px;
+    padding: 0;
+  }
 }

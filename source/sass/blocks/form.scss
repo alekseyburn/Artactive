@@ -2,3 +2,21 @@
   display: block;
   margin-bottom: 30px;
 }
+
+.form__send {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    &--faq {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+  }
+
+  .form__send--faq {
+    width: 190px;
+  }
+}

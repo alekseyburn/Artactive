@@ -23,6 +23,47 @@
   margin-bottom: 23px;
 
   &:last-of-type {
-    margin-bottom: 33px;
+    margin-bottom: 35px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .about {
+    position: relative;
+
+    padding: 50px $tablet-indent 145px;
+
+    background-image: url("../img/bg-lines-tablet@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-lines-tablet@2x.png");
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -60px;
+      left: 50%;
+
+      width: 11px;
+      height: 130px;
+
+      background-image: url("../img/shape-lines.png");
+      transform: translateX(-50%);
+    }
+  }
+
+  .about__title {
+    margin-bottom: 43px;
+  }
+
+  .about__subtitle {
+    margin-bottom: 25px;
+  }
+
+  .about__text {
+    &:last-of-type {
+      margin-bottom: 50px;
+    }
   }
 }

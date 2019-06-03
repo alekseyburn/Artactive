@@ -21,3 +21,45 @@
 .interior__text {
   margin-bottom: 40px;
 }
+
+@media (min-width: $tablet-width) {
+  .interior {
+    position: relative;
+
+    padding-bottom: 400px;
+
+    background-image: url("../img/photo-sofa-tablet@1x.png"), url("../img/bg-lines-tablet@1x.png");
+    background-size: 536px, contain;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -60px;
+      left: 50%;
+
+      width: 11px;
+      height: 130px;
+
+      background-image: url("../img/shape-lines.png");
+      transform: translateX(-50%);
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/photo-sofa-tablet@2x.png"), url("../img/bg-lines-tablet@2x.png");
+    }
+  }
+
+  .interior__subtitle {
+    width: 450px;
+    margin-bottom: 55px;
+  }
+
+  .interior__text {
+    width: 548px;
+    margin-bottom: 45px;
+  }
+
+  .interior__link {
+    width: 238px;
+  }
+}

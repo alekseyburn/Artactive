@@ -1,17 +1,11 @@
 .promo {
-  padding: 322px $mobile-indent 0;
+  position: relative;
+  z-index: 1;
+
+  padding: 349px 0 0;
 
   font-family: $muller;
   color: $white;
-
-  background-image: url("../img/print-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-position: 0 -16px;
-  background-size: 309px;
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/print-mobile@2x.png");
-  }
 }
 
 .promo__slogan {
@@ -45,4 +39,32 @@
   font-size: 16px;
   line-height: 18px;
   font-family: $opensans;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    width: 282px;
+    margin-left: auto;
+    padding: 57px 0 0;
+  }
+
+  .promo__slogan {
+    margin-bottom: 30px;
+
+    font-size: 45px;
+    line-height: 53px;
+  }
+
+  .promo__title {
+    margin-bottom: 35px;
+  }
+
+  .promo__link {
+    width: 250px;
+    margin-bottom: 27px;
+  }
 }

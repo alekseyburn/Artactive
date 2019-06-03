@@ -23,6 +23,10 @@
 
 .faq__item {
   margin-bottom: 30px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .faq__subtitle {
@@ -33,6 +37,46 @@
   font-family: $opensans;
 }
 
-.faq__item:last-of-type {
-  margin: 0;
+@media (min-width: $tablet-width) {
+  .faq {
+    position: relative;
+
+    padding: 0 $tablet-indent 100px;
+
+    background-image: url("../img/bg-lines-tablet@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-lines-tablet@2x.png");
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -60px;
+      left: 50%;
+      z-index: 2;
+
+      width: 11px;
+      height: 130px;
+
+      background-image: url("../img/shape-lines.png");
+      transform: translateX(-50%);
+    }
+  }
+
+  .faq__title {
+    margin-bottom: 40px;
+  }
+
+  .faq__list {
+    margin-bottom: 50px;
+  }
+
+  .faq__item {
+    margin-bottom: 28px;
+  }
+
+  .faq__subtitle {
+    margin-bottom: 14px;
+  }
 }

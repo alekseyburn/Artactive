@@ -1,37 +1,112 @@
 .site-list {
   @include reset-list;
 
-  display: none;
-}
+  position: absolute;
+  top: -36px;
+  left: -$mobile-indent;
+  z-index: 2;
 
-.site-list__item {
-  font-size: 16px;
+  display: none;
+  width: $mobile-width;
+
+  background-color: $white;
 }
 
 .site-list__link {
   display: flex;
-  justify-content: flex-start;
-  margin-top: -1px;
-  padding: 10px $mobile-indent 10px 90px;
+  justify-content: center;
+  padding: 10px 0;
 
-  font-weight: bold;
-  color: $white;
+  font-weight: 600;
+  font-size: 13px;
+  color: $main-text;
   text-transform: uppercase;
+  letter-spacing: 0.05em;
 
-  border-top: 1px solid rgba($gray, 0.1);
-  border-top-color: $white;
-  border-bottom: 1px solid $white;
+  &--phone {
+    display: none;
+  }
+
+  &--call-request {
+    display: none;
+  }
 
   &:hover,
   &:focus {
-    color: rgba($white, 0.6);
-
-    background-color: rgba($gray, 0.4);
+    color: $pink;
   }
 
   &:active {
-    color: rgba($white, 0.3);
+    color: $pink-active;
+  }
+}
 
-    background-color: rgba($gray, 0.8);
+@media (min-width: $tablet-width) {
+  .site-list {
+    top: -40px;
+    right: -$tablet-indent;
+    left: auto;
+
+    width: 300px;
+    min-height: 602px;
+    padding: 40px 65px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 300px;
+      bottom: 0;
+      z-index: -1;
+
+      display: block;
+      width: $tablet-width - 300px;
+
+      background-color: rgba($black, 0.4);
+    }
+  }
+
+  .site-list__item:nth-last-child(3) {
+    margin-bottom: 65px;
+  }
+
+  .site-list__link {
+    justify-content: flex-start;
+
+    line-height: 28px;
+
+    &--phone {
+      display: block;
+      margin-bottom: 18px;
+
+      font-weight: 700;
+      font-size: 16px;
+    }
+
+    &--call-request {
+      display: block;
+      width: 165px;
+      padding: 0;
+
+      font-weight: 800;
+      font-size: 11px;
+      line-height: 28px;
+      text-align: center;
+      color: $pink;
+
+      border: 2px solid $pink;
+      border-radius: 24px;
+
+      &:hover,
+      &:focus {
+        color: $white;
+
+        background-color: $pink;
+      }
+
+      &:active {
+        background-color: $pink-active;
+      }
+    }
   }
 }

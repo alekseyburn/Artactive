@@ -11,7 +11,7 @@
   border: none;
   border-bottom: 1px solid $dark-gray;
 
-  &--color {
+  &--faq {
     color: $white;
 
     &::placeholder {
@@ -23,5 +23,13 @@
   &:focus {
     border-bottom-color: $pink;
     outline: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .input-data__field {
+    &--faq {
+      width: 180px;
+    }
   }
 }
