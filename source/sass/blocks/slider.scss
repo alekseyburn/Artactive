@@ -27,3 +27,12 @@
 .slider__btn-icon {
   fill: $purple;
 }
+
+@media (min-width: $tablet-width) {
+  .slider {
+    position: absolute;
+
+    width: 225px;
+    padding: 0;
+  }
+}
