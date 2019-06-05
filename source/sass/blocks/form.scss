@@ -20,3 +20,15 @@
     width: 190px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .form {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .form__send {
+    width: 190px;
+  }
+}

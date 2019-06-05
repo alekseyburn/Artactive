@@ -1,50 +1,62 @@
 .main-nav {
   position: relative;
 }
-
-.main-nav__toggle {
-  position: absolute;
-  top: -13px;
-  right: 0;
-  z-index: 3;
-
-  width: 25px;
-  height: 16px;
-
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-
-
-  &::before {
-    content: "";
+@media (max-width: $tablet-and-mobile-width) {
+  .main-nav__toggle {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -13px;
+    right: 0;
+    z-index: 3;
 
-    display: block;
     width: 25px;
-    height: 2px;
+    height: 16px;
 
-    background-color: $white;
-    box-shadow: 0 7px 0 0 $white, 0 14px 0 0 $white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      display: block;
+      width: 25px;
+      height: 2px;
+
+      background-color: $white;
+      box-shadow: 0 7px 0 0 $white, 0 14px 0 0 $white;
+    }
+
+    &:hover::before,
+    &:focus::before {
+      background-color: $pink-hover;
+      box-shadow: 0 7px 0 0 $pink-hover, 0 14px 0 0 $pink-hover;
+    }
+
+    &:active::before {
+      background-color: $pink-active;
+      box-shadow: 0 7px 0 0 $pink-active, 0 14px 0 0 $pink-active;
+    }
   }
 
-  &:hover::before,
-  &:focus::before {
-    background-color: $pink-hover;
-    box-shadow: 0 7px 0 0 $pink-hover, 0 14px 0 0 $pink-hover;
-  }
-
-  &:active::before {
-    background-color: $pink-active;
-    box-shadow: 0 7px 0 0 $pink-active, 0 14px 0 0 $pink-active;
+  @media (min-width: $tablet-width) {
+    .main-nav__toggle {
+      top: -13px;
+      right: 0;
+    }
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: 900px;
+    margin-bottom: 127px;
+  }
+
   .main-nav__toggle {
-    top: -13px;
-    right: 0;
+    display: none;
   }
 }

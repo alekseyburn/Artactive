@@ -17,37 +17,40 @@
 </head>
 <body>
   <header class="page-header page-header--nojs">
-    <a class="page-header__logo" href="index.html">
-      <picture>
-        <source type="image/webp" srcset="../img/logo@1x.webp 1x, ../img/logo@2x.webp 2x">
+    <div class="page-header__wrapper">
+      <a class="page-header__logo" href="index.html">
+        <picture>
+          <source type="image/webp" srcset="../img/logo@1x.webp 1x, ../img/logo@2x.webp 2x">
 
-        <img class="page-header__logo-image" src="../img/logo@1x.png" srcset="../img/logo@2x.png 2x"
-             alt="Копицентр «Artactive»">
-      </picture>
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button" aria-label="Отобразить/закрыть меню"></button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item"><a class="site-list__link" href="about.html">О нас</a></li>
-        <li class="site-list__item"><a class="site-list__link" href="services.html">Услуги</a></li>
-        <li class="site-list__item"><a class="site-list__link" href="reviews.html">Отзывы</a></li>
-        <li class="site-list__item"><a class="site-list__link" href="faq.html">FAQ</a></li>
-        <li class="site-list__item"><a class="site-list__link" href="contacts.html">Контакты</a></li>
-        <li class="site-list__item"><a class="site-list__link site-list__link--phone" href="tel:89201488131">+7 (920)
-          148 81 31</a></li>
-        <li class="site-list__item"><a class="site-list__link site-list__link--call-request" href="/">Заказать
-          звонок</a></li>
-      </ul>
-    </nav>
-    <section class="promo">
-      <b class="promo__slogan">Размер не&nbsp;имеет значения!</b>
-      <h1 class="promo__title">Оперативная полиграфия и&nbsp;широкоформатная печать любого размера</h1>
-      <a class="promo__link button" href="order.html">Заказать печать</a>
-      <small class="promo__text">с доставкой по Ярославлю и&nbsp;Ярославской области</small>
-    </section>
+          <img class="page-header__logo-image" src="../img/logo@1x.png" srcset="../img/logo@2x.png 2x"
+               alt="Копицентр «Artactive»">
+        </picture>
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button" aria-label="Отобразить/закрыть меню"></button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item"><a class="site-list__link" href="about.html">О нас</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="services.html">Услуги</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="reviews.html">Отзывы</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="faq.html">FAQ</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="contacts.html">Контакты</a></li>
+          <li class="site-list__item"><a class="site-list__link site-list__link--phone" href="tel:89201488131">+7 (920)
+            148 81 31</a></li>
+          <li class="site-list__item"><a class="site-list__link site-list__link--call-request" href="/">Заказать
+            звонок</a></li>
+        </ul>
+      </nav>
+      <section class="promo">
+        <b class="promo__slogan">Размер не&nbsp;имеет значения!</b>
+        <h1 class="promo__title">Оперативная полиграфия и&nbsp;широкоформатная печать любого размера</h1>
+        <a class="promo__link button" href="order.html">Заказать печать</a>
+        <small class="promo__text">с доставкой по Ярославлю и&nbsp;Ярославской области</small>
+      </section>
+    </div>
   </header>
   <main class="page-main">
     <section class="section about">
+      <div class="about__wrapper">
       <h2 class="section__title about__title">1. О нас</h2>
       <p class="section__subtitle section__subtitle--about about__subtitle">Полный спектр услуг — от дизайна до
         печати</p>
@@ -59,6 +62,7 @@
         календарей, Вы можете получить в одном месте, воспользовавшись сопутствующими услугами копицентра.</p>
       <p class="section__text about__text">При этом работа выполняется в максимально сжатые сроки и не в ущерб качеству
         конечного результата, которое неизменно остается на высоте.</p>
+      </div>
       <ul class="about__list process-list">
         <li class="process-list__item process-list__item--book">
           <p class="process-list__text">Приём и детальное обсуждение заказа</p>
@@ -75,11 +79,12 @@
       </ul>
     </section>
     <section class="section services">
+
       <h2 class="section__title section__title--services services__title">2. Услуги</h2>
       <ul class="services__list">
         <li class="services__item banners">
-          <h3 class="section__subtitle section__subtitle--services banners__subtitle">Широкоформатная печать баннеров,
-            растяжек, афиш</h3>
+          <div class="banners__container">
+          <h3 class="section__subtitle section__subtitle--services banners__subtitle">Широкоформатная печать баннеров, растяжек, афиш</h3>
           <ul class="banners__list">
             <li class="banners__item">подготовка макетов к печати, дизайн рекламных баннеров</li>
             <li class="banners__item">срочная печать за 3 часа</li>
@@ -91,11 +96,15 @@
           <div class="banners__wrapper">
             <figure class="banners__img-wrapper">
               <picture>
+                <source type="image/webp" media="(min-width: 1170px)"
+                        srcset="../img/photo-banner-desktop@1x.webp 1x, ../img/photo-banner-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 780px)"
                         srcset="../img/photo-banner-tablet@1x.webp 1x, ../img/photo-banner-tablet@2x.webp 2x">
                 <source type="image/webp"
                         srcset="../img/photo-banner-mobile@1x.webp 1x, ../img/photo-banner-mobile@2x.webp 2x">
 
+                <source media="(min-width: 1170px)"
+                        srcset="../img/photo-banner-desktop@1x.jpg 1x, ../img/photo-banner-desktop@2x.jpg 2x">
                 <source media="(min-width: 780px)"
                         srcset="../img/photo-banner-tablet@1x.jpg 1x, ../img/photo-banner-tablet@2x.jpg 2x">
                 <img class="banners__img" src="../img/photo-banner-mobile@1x.jpg"
@@ -121,8 +130,11 @@
             <p class="order__text">Закажите консультацию</p>
             <a class="order__link button" href="order.html">Заказать</a>
           </div>
+          </div>
         </li>
         <li class="services__item interior">
+          <div class="interior__container">
+          <div class="interior__wrapper">
           <h3 class="section__subtitle section__subtitle--interior interior__subtitle">Широкоформатная печать для вашего
             интерьера</h3>
           <p class="section__text interior__text">Печатаем&nbsp;широкоформатные&nbsp;фотографии на глянцевой и матовой
@@ -131,30 +143,37 @@
             обработку и редактирование ваших фотографий силами наших дизайнеров: композиции, фотоколлаж, ретушь,
             различные эффекты</p>
           <a class="interior__link button" href="order.html">Оставить заявку</a>
+          </div>
+          </div>
         </li>
         <li class="services__item polygraphy">
+          <div class="polygraphy__container">
           <div class="polygraphy__wrapper">
-          <h3 class="section__subtitle section__subtitle--polygraphy polygraphy__subtitle">Оперативная полиграфия — от визитки до баннера</h3>
-          <p class="section__text polygraphy__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco labo&shy;ris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit
-            in voluptate velit esse&nbsp;cillum dolore eu fugiat nulla pariatur.</p>
-          <p class="section__text polygraphy__text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum. Sed ut perspicia&shy;tis unde omnis iste natus error.</p>
+            <h3 class="section__subtitle section__subtitle--polygraphy polygraphy__subtitle">Оперативная полиграфия — от
+              визитки до баннера</h3>
+            <p class="section__text polygraphy__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco labo&shy;ris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit
+              in voluptate velit esse&nbsp;cillum dolore eu fugiat nulla pariatur.</p>
+            <p class="section__text polygraphy__text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum. Sed ut perspicia&shy;tis unde omnis iste natus error.</p>
           </div>
           <picture class="polygraphy__picture">
+            <source type="image/webp" media="(min-width: 1170px)"
+                    srcset="../img/picture-letters-desktop@1x.webp 1x, ../img/picture-letters-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 780px)"
                     srcset="../img/picture-letters-tablet@1x.webp 1x, ../img/picture-letters-tablet@2x.webp 2x">
             <source type="image/webp"
                     srcset="../img/picture-letters-mobile@1x.webp 1x, ../img/picture-letters-mobile@2x.webp 2x">
-
+            <source media="(min-width: 1170px)"
+                    srcset="../img/picture-letters-desktop@1x.png 1x, ../img/picture-letters-desktop@2x.png 2x">
             <source media="(min-width: 780px)"
                     srcset="../img/picture-letters-tablet@1x.png 1x, ../img/picture-letters-tablet@2x.png 2x">
             <img class="polygraphy__img" src="../img/picture-letters-mobile@1x.png"
                  srcset="../img/picture-letters-mobile@2x.png 2x">
           </picture>
-          <div class="request">
+          <div class="polygraphy__request request">
             <i class="request__question">Есть вопросы?</i>
             <p class="request__text">Оставьте заявку на&nbsp;консультацию</p>
             <form class="form" action="https://echo.htmlacademy.ru" method="post">
@@ -167,6 +186,7 @@
               </label>
               <button class="form__send button" type="submit">Отправить</button>
             </form>
+          </div>
           </div>
         </li>
       </ul>
@@ -204,32 +224,32 @@
     <section class="section faq">
       <h2 class="section__title faq__title">4. Частые вопросы (FAQ)</h2>
       <ul class="faq__list">
-        <li class="faq__item">
+        <li class="faq__item faq__item--what-is-layout">
           <h3 class="section__subtitle faq__subtitle">Что такое макет?</h3>
           <p class="section__text faq__text">Макет — это будущее печатное изделие в электронном формате. Верстают
             (собирают) макет в специализированном программном обеспечении.</p>
         </li>
-        <li class="faq__item">
+        <li class="faq__item faq__item--layout-done">
           <h3 class="section__subtitle faq__subtitle">У меня есть готовый макет</h3>
           <p class="section__text faq__text">Вы можете привезти его к нам в офис на любом удобном для вас носителе
             (диск, флешка). В присутствии вас мы обработаем ваш макет и отправим его в производство.</p>
         </li>
-        <li class="faq__item">
+        <li class="faq__item faq__item--no-layout">
           <h3 class="section__subtitle faq__subtitle">У меня нет макета</h3>
           <p class="section__text faq__text">В нашем штате работают професиональные дизайнеры, которые с ваших слов или
             в вашем присутствии сверстают макет, который после утверждения также будет отправлен в печать.</p>
         </li>
-        <li class="faq__item">
+        <li class="faq__item faq__item--time-layout">
           <h3 class="section__subtitle faq__subtitle">Сколько времени занимает печать?</h3>
           <p class="section__text faq__text">В том случае если изображение готово к печати, изготовление занимает около
             3 часов. Также время изготовления зависит&nbsp;от нашей загруженности.</p>
         </li>
-        <li class="faq__item">
+        <li class="faq__item faq__item--office">
           <h3 class="section__subtitle faq__subtitle">Я не могу приехать к вам в&nbsp;офис</h3>
           <p class="section__text faq__text">Отправьте нам изображение по электронной почте, укажите свой телефон. Мы
             свяжемся с вами для уточнения деталей. Готовое изделие мы доставим вам курьером.</p>
         </li>
-        <li class="faq__item">
+        <li class="faq__item faq__item--courier">
           <h3 class="section__subtitle faq__subtitle">Вызов курьера бесплатный?</h3>
           <p class="section__text faq__text">В зависимости от соимости заказа, курьер&nbsp;может доставить вам продукцию
             бесплатно (при соимости от 600 руб.) или от 150 руб. в пределах Ярославля и до 500&nbsp;руб. в пределах
@@ -254,6 +274,7 @@
       </div>
     </section>
     <section class="section contacts">
+      <div class="contacts__container">
       <div class="contacts__wrapper">
         <h2 class="section__title contacts__title">5. Контакты</h2>
         <ul class="contacts__list">
@@ -268,12 +289,17 @@
           </li>
         </ul>
       </div>
+      </div>
       <div class="contacts__map map">
         <iframe class="map__widget" src="https://yandex.ru/map-widget/v1/-/CCvu6Cii" allowfullscreen></iframe>
         <picture>
+          <source type="image/webp" media="(min-width: 1170px)"
+                  srcset="../img/map-desktop@1x.webp 1x, ../img/map-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width: 780px)"
                   srcset="../img/map-tablet@1x.webp 1x, ../img/map-tablet@2x.webp 2x">
           <source type="image/webp" srcset="../img/map-mobile@1x.webp 1x, ../img/map-mobile@2x.webp 2x">
+          <source media="(min-width: 1170px)"
+                  srcset="../img/map-desktop@1x.jpg 1x, ../img/map-desktop@2x.jpg 2x">
           <source media="(min-width: 780px)"
                   srcset="../img/map-tablet@1x.jpg 1x, ../img/map-tablet@2x.jpg 2x">
           <img class="map__img" src="../img/map-mobile@1x.jpg" srcset="../img/map-mobile@2x.jpg 2x"
@@ -282,8 +308,11 @@
       </div>
     </section>
     <footer class="page-footer">
+      <div class="page-footer__wrapper">
       <a class="page-footer__policy" href="policy.html">Политика конфиденциальности</a>
       <p class="page-footer__copyright">ООО «АртАктив», 2017 ©</p>
+        <p class="page-footer__designed">Designed by Sergey Strogiy</p>
+      </div>
     </footer>
   </main>
   <script src="js/navmenu.min.js"></script>

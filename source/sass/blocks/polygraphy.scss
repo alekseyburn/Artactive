@@ -1,9 +1,12 @@
 .polygraphy {
   margin-bottom: 0;
-  padding-top: 70px;
-  padding-bottom: 0;
 
   background-color: $bg-second;
+}
+
+.polygraphy__container {
+  padding-top: 70px;
+  padding-bottom: 0;
 }
 
 .polygraphy__subtitle {
@@ -20,7 +23,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .polygraphy {
+  .polygraphy__container {
     display: flex;
     flex-wrap: wrap;
     padding-top: 105px;
@@ -50,5 +53,35 @@
 
   .polygraphy__img {
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .polygraphy__container {
+    width: $desktop-width;
+    margin: 0 auto;
+    padding: 135px $desktop-indent 130px;
+  }
+
+  .polygraphy__wrapper {
+    order: 1;
+    width: 555px;
+    margin-bottom: 45px;
+  }
+
+  .polygraphy__text {
+    width: 557px;
+  }
+
+  .polygraphy__picture {
+    position: static;
+
+    order: 2;
+    width: 548px;
+    margin-top: -130px;
+  }
+
+  .polygraphy__request {
+    order: 3;
   }
 }

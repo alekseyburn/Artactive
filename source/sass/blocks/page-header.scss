@@ -1,14 +1,25 @@
 .page-header {
-  padding: 23px $mobile-indent 67px;
-
   background-color: $purple;
-  background-image: url("../img/print-mobile@1x.png"), url("../img/bg-header-mobile@1x.jpg");
-  background-repeat: no-repeat, repeat-y;
-  background-position: center 40px, center top;
-  background-size: 341px 341px, contain;
+  background-image: url("../img/bg-header-mobile@1x.jpg");
+  background-repeat: repeat-y;
+  background-position: center top;
+  background-size: contain;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/print-mobile@2x.png"), url("../img/bg-header-mobile@2x.jpg");
+    background-image: url("../img/bg-header-mobile@2x.jpg");
+  }
+}
+
+.page-header__wrapper {
+  padding: 23px $mobile-indent 67px;
+
+  background-image: url("../img/print-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center 40px;
+  background-size: 341px 341px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/print-mobile@2x.png");
   }
 }
 
@@ -34,82 +45,124 @@
   display: block;
 }
 
-.page-header--nojs .site-list {
-  display: block;
-}
-
-.page-header--menu-opened .main-nav__toggle {
-  top: -20px;
-  right: 0;
-
-  width: 16px;
-  height: 16px;
-
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: -5px;
-
-    width: 25px;
-    height: 1px;
-
-    background-color: $dark-gray;
-  }
-
-  &::before {
-    box-shadow: none;
-    transform: rotate(45deg);
-  }
-
-  &::after {
-    transform: rotate(-45deg);
-  }
-
-  &:hover::before,
-  &:hover::after,
-  &:focus::before,
-  &:focus::after {
-    background-color: $pink;
-    outline: none;
-    box-shadow: none;
-  }
-
-  &:active::before,
-  &:active::after {
-    background-color: $black;
-    outline: none;
-    box-shadow: none;
-  }
-}
-
-.page-header--nojs .main-nav__toggle {
-  display: none;
-}
-
-.page-header--menu-opened .site-list {
-  display: block;
-}
-
 @media (min-width: $tablet-width) {
   .page-header {
-    padding: 27px $tablet-indent 95px;
-
-    background-image: url("../img/print-tablet@1x.png"), url("../img/bg-header-tablet@1x.jpg");
-    background-position: left 50px, center top;
-    background-size: 456px 529px, cover;
+    background-image: url("../img/bg-header-tablet@1x.jpg");
+    background-position: center top;
+    background-size: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/print-tablet@2x.png"), url("../img/bg-header-tablet@2x.jpg");
+      background-image: url("../img/bg-header-tablet@2x.jpg");
     }
   }
 
   .page-header__wrapper {
-    padding: 27px 0;
+    padding: 27px $tablet-indent 95px;
+
+    background-image: url("../img/print-tablet@1x.png");
+    background-position: left 50px;
+    background-size: 456px 529px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/print-tablet@2x.png");
+    }
+  }
+}
+
+@media (max-width: $tablet-and-mobile-width) {
+  .page-header--nojs .site-list {
+    display: block;
   }
 
   .page-header--menu-opened .main-nav__toggle {
-    top: -13px;
+    top: -20px;
+    right: 0;
+
+    width: 16px;
+    height: 16px;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -5px;
+
+      width: 25px;
+      height: 1px;
+
+      background-color: $dark-gray;
+    }
+
+    &::before {
+      box-shadow: none;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &:hover::before,
+    &:hover::after,
+    &:focus::before,
+    &:focus::after {
+      background-color: $pink;
+      outline: none;
+      box-shadow: none;
+    }
+
+    &:active::before,
+    &:active::after {
+      background-color: $black;
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
+  .page-header--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .page-header--menu-opened .site-list {
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    .page-header--menu-opened .main-nav__toggle {
+      top: -13px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    background-color: $purple;
+    background-image: url("../img/bg-header-desktop@1x.jpg");
+    background-repeat: repeat-y;
+    background-position: center bottom;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-header-desktop@2x.jpg");
+    }
+  }
+
+  .page-header__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    width: $desktop-width;
+    margin: 0 auto;
+    padding: 60px $desktop-indent 190px;
+
+    background-image: url("../img/print-desktop@1x.png");
+    background-position: -90px center;
+    background-size: 647px 648px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/print-desktop@2x.png");
+    }
   }
 }

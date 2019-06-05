@@ -79,6 +79,10 @@
     background-image: url("../img/bg-arrows-tablet@1x.png");
     background-position: 115px 60px;
     background-size: 484px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-arrows-tablet@2x.png");
+    }
   }
 
   .process-list__item {
@@ -98,6 +102,40 @@
       align-self: flex-end;
       margin-top: -105px;
       margin-right: 190px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .process-list {
+    width: 580px;
+    margin-top: 10px;
+
+    background-image: url("../img/bg-arrows-desktop@1x.png");
+    background-position: 110px 70px;
+    background-size: 316px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-arrows-desktop@2x.png");
+    }
+  }
+
+  .process-list__item {
+    &--book {
+      align-self: flex-start;
+      margin-bottom: -15px;
+      margin-left: 160px;
+    }
+
+    &--tablet {
+      margin-right: 40px;
+      margin-bottom: -112px;
+    }
+
+    &--car {
+      align-self: flex-end;
+      margin-top: -70px;
+      margin-right: 210px;
     }
   }
 }

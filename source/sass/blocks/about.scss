@@ -67,3 +67,34 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .about {
+    display: flex;
+    justify-content: space-between;
+    width: $desktop-width;
+    margin: 0 auto;
+    padding: 105px $desktop-indent 105px;
+
+    background-image: url("../img/bg-lines-desktop@1x.png");
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-lines-desktop@2x.png");
+    }
+  }
+
+  .about__wrapper {
+    order: 2;
+    width: 520px;
+  }
+
+  .about__title {
+    margin-bottom: 65px;
+  }
+
+  .about__subtitle {
+    width: 360px;
+    margin-bottom: 45px;
+  }
+}

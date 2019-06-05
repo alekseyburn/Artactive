@@ -1,7 +1,9 @@
 .page-footer {
-  padding: 40px $mobile-indent 30px;
-
   background-color: $purple;
+}
+
+.page-footer__wrapper {
+  padding: 40px $mobile-indent 30px;
 }
 
 .page-footer__policy {
@@ -31,8 +33,12 @@
   color: $white;
 }
 
+.page-footer__designed {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
-  .page-footer {
+  .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
     padding: 20px $tablet-indent;
@@ -41,5 +47,22 @@
   .page-footer__policy {
     order: 2;
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    width: $desktop-width;
+    margin: 0 auto;
+    padding: 12px $desktop-indent;
+  }
+
+  .page-footer__designed {
+    display: block;
+    order: 3;
+    margin: 0;
+
+    font-size: 13px;
+    color: $white;
   }
 }

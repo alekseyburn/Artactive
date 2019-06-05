@@ -53,6 +53,10 @@
       height: 287px;
 
       background-image: url("../img/picture-letter@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/picture-letter@2x.png");
+      }
     }
 
     &--faq {
@@ -77,5 +81,37 @@
     &--faq {
       margin-bottom: 25px;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .request {
+    width: 765px;
+
+    &::after {
+      right: -510px;
+      bottom: -5px;
+
+      width: 503px;
+      height: 340px;
+
+      background-image: url("../img/picture-letter-desktop@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/picture-letter-desktop@2x.png");
+      }
+    }
+
+    &--faq {
+      width: 100%;
+      padding: 37px 67px 25px 310px;
+
+      background-position: 30px center;
+      background-size: 241px;
+    }
+  }
+
+  .request__text {
+    margin-bottom: 25px;
   }
 }

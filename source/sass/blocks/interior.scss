@@ -63,3 +63,36 @@
     width: 238px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .interior {
+    padding-top: 125px;
+    padding-bottom: 570px;
+
+    background-image: url("../img/photo-sofa-desktop@1x.png"), url("../img/bg-lines-desktop@1x.png");
+    background-position: -250px center, center;
+    background-size: 1276px, cover;
+  }
+
+  .interior__container {
+    width: $desktop-width;
+    margin: 0 auto;
+    padding: 0 $desktop-indent;
+  }
+
+  .interior__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 555px;
+    margin-left: auto;
+  }
+
+  .interior__subtitle {
+    margin-bottom: 45px;
+  }
+
+  .interior__text {
+    width: 555px;
+    margin-bottom: 55px;
+  }
+}

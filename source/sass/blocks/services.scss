@@ -37,3 +37,24 @@
     padding: 0 $tablet-indent;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .services {
+    padding-top: 100px;
+  }
+
+  .services__wrapper {
+    width: $desktop-width;
+    margin: 0 auto;
+  }
+
+  .services__title {
+    width: $desktop-width;
+    margin: 0 auto 75px;
+    padding: 0 $desktop-indent;
+  }
+
+  .services__item {
+    margin-bottom: 77px;
+  }
+}
