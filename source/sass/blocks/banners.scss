@@ -78,3 +78,50 @@
     bottom: -40px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .banners__container {
+    display: flex;
+    flex-direction: column;
+    width: $desktop-width;
+    margin: 0 auto;
+    padding: 0 $desktop-indent;
+  }
+
+  .banners__subtitle {
+    order: 2;
+    float: left;
+    width: 473px;
+    margin-bottom: 43px;
+  }
+
+  .banners__list {
+    order: 3;
+    float: left;
+    width: 473px;
+    margin-bottom: 73px;
+  }
+
+  .banners__wrapper {
+    order: 5;
+    margin-top: -480px;
+    margin-left: auto;
+  }
+
+
+  .banners__img {
+    width: 570px;
+    margin-bottom: 35px;
+  }
+
+  .banners__order {
+    order: 4;
+    float: left;
+  }
+
+  .banners__caption {
+    margin-left: 280px;
+
+    text-align: left;
+  }
+}

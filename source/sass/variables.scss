@@ -20,13 +20,14 @@ $muller: "Muller", "Arial", sans-serif;
 
 $mobile-indent: 15px; //используется для отступов (margin-bottom, padding слева и справа)
 $tablet-indent: 30px;
+$desktop-indent: 15px;
 
 $mobile-width: 320px;
 $tablet-width: 780px;
-$desktop-width: 1150px;
+$desktop-width: 1170px;
 
 $mobile-width-only: 779px;
-$tablet-width-only: 1149px;
+$tablet-and-mobile-width: 1169px;
 
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;

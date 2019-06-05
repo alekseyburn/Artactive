@@ -76,3 +76,37 @@
     display: block;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    width: $desktop-width;
+    margin: 0 auto;
+    padding: 135px $desktop-indent 125px;
+
+    background-image: url("../img/bg-lines-desktop@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-lines-desktop@2x.png");
+    }
+  }
+
+  .reviews__title {
+    margin-bottom: 75px;
+  }
+
+  .reviews__item {
+    width: 844px;
+    margin: 0 auto 40px;
+    padding: 55px 66px 55px;
+  }
+
+  .reviews__text {
+    margin-bottom: 5px;
+  }
+
+  .reviews__btn-wrapper {
+    position: static;
+
+    margin-left: 150px;
+  }
+}

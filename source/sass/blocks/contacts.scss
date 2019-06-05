@@ -92,3 +92,16 @@
     margin-bottom: 50px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .contacts__container {
+    width: $desktop-width;
+    margin: 0 auto;
+  }
+
+  .contacts__wrapper {
+    width: 460px;
+    margin: 123px $desktop-indent 0;
+    padding: 85px 85px 100px;
+  }
+}

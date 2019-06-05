@@ -31,3 +31,17 @@
     width: 250px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .order {
+    flex-direction: column;
+    width: 473px;
+    padding-bottom: 35px;
+  }
+
+  .order__link {
+    width: 173px;
+    margin-top: -78px;
+    margin-left: auto;
+  }
+}

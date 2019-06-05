@@ -33,3 +33,9 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .input-data__field {
+    width: 240px;
+  }
+}

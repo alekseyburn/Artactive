@@ -58,3 +58,22 @@
     line-height: 40px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .section__subtitle {
+    &--services::before {
+      top: 35%;
+      left: -10%;
+    }
+
+    &--interior::before {
+      top: 35%;
+      left: -20%;
+    }
+
+    &--polygraphy::before {
+      top: 35%;
+      left: -20%;
+    }
+  }
+}

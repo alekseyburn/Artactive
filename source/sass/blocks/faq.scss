@@ -80,3 +80,58 @@
     margin-bottom: 14px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .faq {
+    width: $desktop-width;
+    margin: 0 auto;
+    padding: 0 $desktop-indent 170px;
+
+    background-image: url("../img/bg-lines-desktop@1x.png");
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-lines-desktop@2x.png");
+    }
+  }
+
+  .faq__title {
+    margin-bottom: 50px;
+  }
+
+  .faq__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+
+  .faq__item {
+    width: 555px;
+    margin-bottom: 38px;
+
+    &--what-is-layout {
+      order: 1;
+    }
+
+    &--layout-done {
+      order: 3;
+    }
+
+    &--no-layout {
+      order: 5;
+    }
+
+    &--time-layout {
+      order: 2;
+    }
+
+    &--office {
+      order: 4;
+    }
+
+    &--courier {
+      order: 6;
+    }
+  }
+}
