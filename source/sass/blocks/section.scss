@@ -16,7 +16,7 @@
 
   font-weight: 500;
   font-size: 24px;
-  line-height: 30px;
+  line-height: 29px;
   font-family: $muller;
 
   &::before {
@@ -55,15 +55,20 @@
 @media (min-width: $tablet-width) {
   .section__subtitle {
     font-size: 32px;
-    line-height: 40px;
+    line-height: 38px;
+
+    &::before {
+      top: 40%;
+      left: 4%;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .section__subtitle {
-    &--services::before {
-      top: 35%;
-      left: -10%;
+    &::before {
+      top: 40%;
+      left: -16%;
     }
 
     &--interior::before {

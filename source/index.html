@@ -76,8 +76,7 @@
         </li>
       </ul>
     </section>
-    <section class="section services" hidden>
-
+    <section class="section services">
       <h2 class="section__title section__title--services services__title">2. Услуги</h2>
       <ul class="services__list">
         <li class="services__item banners">
@@ -92,8 +91,8 @@
               <li class="banners__item">изготовление цветопробы</li>
               <li class="banners__item">доставка баннеров</li>
             </ul>
-            <div class="banners__wrapper">
-              <figure class="banners__img-wrapper">
+            <div class="banners__slider-wrapper">
+              <figure class="banners__figure">
                 <picture>
                   <source type="image/webp" media="(min-width: 1170px)"
                           srcset="../img/photo-banner-desktop@1x.webp 1x, ../img/photo-banner-desktop@2x.webp 2x">
@@ -131,7 +130,7 @@
             </div>
           </div>
         </li>
-        <li class="services__item interior">
+        <li class="services__item interior" hidden>
           <div class="interior__container">
             <div class="interior__wrapper">
               <h3 class="section__subtitle section__subtitle--interior interior__subtitle">Широкоформатная печать для
@@ -147,7 +146,7 @@
             </div>
           </div>
         </li>
-        <li class="services__item polygraphy">
+        <li class="services__item polygraphy" hidden>
           <div class="polygraphy__container">
             <div class="polygraphy__wrapper">
               <h3 class="section__subtitle section__subtitle--polygraphy polygraphy__subtitle">Оперативная полиграфия —
@@ -194,7 +193,7 @@
         </li>
       </ul>
     </section>
-    <section class="reviews">
+    <section class="reviews" hidden>
       <h2 class="section__title section__title--services reviews__title">3. Отзывы</h2>
       <div class="reviews__wrapper">
         <blockquote class="reviews__item">
@@ -224,7 +223,7 @@
         </div>
       </div>
     </section>
-    <section class="section faq">
+    <section class="section faq" hidden>
       <h2 class="section__title faq__title">4. Частые вопросы (FAQ)</h2>
       <ul class="faq__list">
         <li class="faq__item faq__item--what-is-layout">
@@ -276,7 +275,7 @@
         </form>
       </div>
     </section>
-    <section class="section contacts">
+    <section class="section contacts" hidden>
       <div class="contacts__container">
         <div class="contacts__wrapper">
           <h2 class="section__title contacts__title">5. Контакты</h2>
@@ -319,5 +318,6 @@
     </footer>
   </main>
   <script src="js/navmenu.min.js"></script>
+  <script src="js/iepolyfills.min.js"></script>
 </body>
 </html>

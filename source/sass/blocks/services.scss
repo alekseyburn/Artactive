@@ -5,7 +5,7 @@
 }
 
 .services__title {
-  margin-bottom: 38px;
+  margin-bottom: 40px;
   padding: 0 $mobile-indent;
 }
 
@@ -15,7 +15,6 @@
 
 .services__item {
   margin-bottom: 74px;
-  padding: 0 $mobile-indent;
 }
 
 @media (min-width: $tablet-width) {
@@ -34,13 +33,12 @@
 
   .services__item {
     margin-bottom: 65px;
-    padding: 0 $tablet-indent;
   }
 }
 
 @media (min-width: $desktop-width) {
   .services {
-    padding-top: 100px;
+    padding-top: 98px;
   }
 
   .services__wrapper {
@@ -50,7 +48,7 @@
 
   .services__title {
     width: $desktop-width;
-    margin: 0 auto 75px;
+    margin: 0 auto 78px;
     padding: 0 $desktop-indent;
   }
 
