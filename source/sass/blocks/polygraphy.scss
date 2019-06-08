@@ -5,29 +5,67 @@
 }
 
 .polygraphy__container {
-  padding-top: 70px;
-  padding-bottom: 0;
+  padding: 67px $mobile-indent 0;
+}
+
+.polygraphy__wrapper {
+  position: relative;
+
+  &::after {
+    content: "";
+
+    display: block;
+    width: 290px;
+    height: 284px;
+    margin-top: 25px;
+
+    background-image: url("../img/picture-letters-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/picture-letters-mobile@2x.png");
+    }
+  }
 }
 
 .polygraphy__subtitle {
-  margin-bottom: 40px;
+  margin-bottom: 45px;
 }
 
 .polygraphy__text {
   margin-bottom: 25px;
-}
 
-.polygraphy__img {
-  display: block;
-  margin-bottom: 40px;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .polygraphy__container {
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 105px;
-    padding-bottom: 120px;
+    padding: 107px $tablet-indent 120px;
+  }
+
+  .polygraphy__wrapper {
+    margin-bottom: 66px;
+
+    &::after {
+      position: absolute;
+      right: -$tablet-indent;
+      bottom: -410px;
+
+      width: 370px;
+      height: 384px;
+      margin-top: 0;
+
+      background-image: url("../img/picture-letters-tablet@1x.png");
+      background-repeat: no-repeat;
+      background-position: 8px 0;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/picture-letters-tablet@2x.png");
+      }
+    }
   }
 
   .polygraphy__subtitle {
@@ -36,49 +74,47 @@
 
   .polygraphy__text {
     width: 642px;
-
-    &:last-of-type {
-      margin-bottom: 66px;
-    }
-  }
-
-  .polygraphy__picture {
-    position: absolute;
-    right: 0;
-    bottom: 60px;
-
-    order: 3;
-    width: 353px;
-  }
-
-  .polygraphy__img {
-    margin-bottom: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .polygraphy {
+    overflow-x: hidden;
+  }
+
   .polygraphy__container {
     width: $desktop-width;
     margin: 0 auto;
-    padding: 135px $desktop-indent 130px;
+    padding: 136px $desktop-indent 130px;
   }
 
   .polygraphy__wrapper {
     order: 1;
     width: 555px;
-    margin-bottom: 45px;
+    margin-bottom: 105px;
+
+    &::after {
+      position: absolute;
+      top: -145px;
+      right: -660px;
+      bottom: auto;
+
+      width: 600px;
+      height: 540px;
+
+      background-image: url("../img/picture-letters-desktop@1x.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/picture-letters-desktop@2x.png");
+      }
+    }
   }
 
   .polygraphy__text {
     width: 557px;
-  }
-
-  .polygraphy__picture {
-    position: static;
-
-    order: 2;
-    width: 548px;
-    margin-top: -130px;
   }
 
   .polygraphy__request {

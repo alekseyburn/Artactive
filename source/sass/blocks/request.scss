@@ -28,7 +28,7 @@
 }
 
 .request__text {
-  margin: 0 0 27px;
+  margin: 0 0 26px;
 
   font-weight: 600;
   font-size: 20px;
@@ -86,7 +86,7 @@
 
 @media (min-width: $desktop-width) {
   .request {
-    width: 765px;
+    width: 760px;
 
     &::after {
       right: -510px;

@@ -43,8 +43,6 @@
 
   &--polygraphy::before {
     content: "3";
-    top: 40%;
-    left: 5%;
   }
 }
 
@@ -69,16 +67,6 @@
     &::before {
       top: 40%;
       left: -16%;
-    }
-
-    &--interior::before {
-      top: 35%;
-      left: -20%;
-    }
-
-    &--polygraphy::before {
-      top: 35%;
-      left: -20%;
     }
   }
 }

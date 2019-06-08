@@ -1,6 +1,10 @@
 .form__label {
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
+
+  &:last-of-type {
+    margin-bottom: 33px;
+  }
 }
 
 .form__send {
