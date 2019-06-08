@@ -1,9 +1,8 @@
 .about {
-  padding: 38px $mobile-indent 55px;
+  padding: 37px $mobile-indent 55px;
 
   background-image: url("../img/bg-lines-mobile@1x.png");
   background-repeat: repeat-y;
-  background-position: center center;
   background-size: contain;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -12,18 +11,18 @@
 }
 
 .about__title {
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 
 .about__subtitle {
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .about__text {
-  margin-bottom: 23px;
+  margin-bottom: 24px;
 
   &:last-of-type {
-    margin-bottom: 35px;
+    margin-bottom: 34px;
   }
 }
 
@@ -31,7 +30,7 @@
   .about {
     position: relative;
 
-    padding: 50px $tablet-indent 145px;
+    padding: 51px $tablet-indent 142px;
 
     background-image: url("../img/bg-lines-tablet@1x.png");
 
@@ -63,7 +62,7 @@
 
   .about__text {
     &:last-of-type {
-      margin-bottom: 50px;
+      margin-bottom: 48px;
     }
   }
 }
@@ -74,7 +73,7 @@
     justify-content: space-between;
     width: $desktop-width;
     margin: 0 auto;
-    padding: 105px $desktop-indent 105px;
+    padding: 107px $desktop-indent 105px;
 
     background-image: url("../img/bg-lines-desktop@1x.png");
     background-size: cover;
@@ -90,11 +89,11 @@
   }
 
   .about__title {
-    margin-bottom: 65px;
+    margin-bottom: 64px;
   }
 
   .about__subtitle {
     width: 360px;
-    margin-bottom: 45px;
+    margin-bottom: 49px;
   }
 }

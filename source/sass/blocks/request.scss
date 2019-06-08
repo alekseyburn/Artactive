@@ -2,7 +2,7 @@
   margin-bottom: 0;
 
   &--faq {
-    padding: 37px 22px 70px;
+    padding: 36px 24px 58px;
 
     color: $white;
 
@@ -28,11 +28,15 @@
 }
 
 .request__text {
-  margin: 0 0 27px;
+  margin: 0 0 26px;
 
   font-weight: 600;
   font-size: 20px;
   line-height: 30px;
+
+  &--faq {
+    margin-bottom: 28px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -61,7 +65,7 @@
 
     &--faq {
       width: 100%;
-      padding: 37px 33px 25px;
+      padding: 36px 35px 14px;
 
       background-image: url("../img/shape-question-tablet@1x.png");
       background-position: 105% -60px;
@@ -86,7 +90,7 @@
 
 @media (min-width: $desktop-width) {
   .request {
-    width: 765px;
+    width: 760px;
 
     &::after {
       right: -510px;
@@ -104,7 +108,7 @@
 
     &--faq {
       width: 100%;
-      padding: 37px 67px 25px 310px;
+      padding: 36px 68px 14px 311px;
 
       background-position: 30px center;
       background-size: 241px;

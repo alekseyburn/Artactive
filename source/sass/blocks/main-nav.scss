@@ -1,6 +1,7 @@
 .main-nav {
   position: relative;
 }
+
 @media (max-width: $tablet-and-mobile-width) {
   .main-nav__toggle {
     position: absolute;
@@ -44,7 +45,7 @@
 
   @media (min-width: $tablet-width) {
     .main-nav__toggle {
-      top: -13px;
+      top: -68px;
       right: 0;
     }
   }
@@ -52,8 +53,8 @@
 
 @media (min-width: $desktop-width) {
   .main-nav {
-    width: 900px;
-    margin-bottom: 127px;
+    width: 897px;
+    margin-bottom: 126px;
   }
 
   .main-nav__toggle {

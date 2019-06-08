@@ -1,11 +1,11 @@
 .banners__subtitle {
-  margin-bottom: 39px;
+  margin-bottom: 40px;
 }
 
 .banners__list {
   @include reset-list;
 
-  margin-bottom: 35px;
+  margin-bottom: 34px;
 }
 
 .banners__item {
@@ -20,11 +20,15 @@
   }
 }
 
-.banners__wrapper {
+.banners__container {
+  padding: 0 $mobile-indent;
+}
+
+.banners__slider-wrapper {
   margin: 0 0 25px;
 }
 
-.banners__img-wrapper {
+.banners__figure {
   margin: 0 0 25px;
 }
 
@@ -41,26 +45,30 @@
 }
 
 .banners__btn-wrapper {
-  margin-bottom: 42px;
+  margin-bottom: 41px;
 }
 
 @media (min-width: $tablet-width) {
+  .banners__container {
+    padding: 0 $tablet-indent;
+  }
+
   .banners__subtitle {
     width: 595px;
-    margin-bottom: 50px;
+    margin-bottom: 56px;
   }
 
   .banners__list {
-    margin-bottom: 45px;
+    margin-bottom: 44px;
   }
 
-  .banners__wrapper {
+  .banners__slider-wrapper {
     position: relative;
 
     margin-bottom: 47px;
   }
 
-  .banners__img-wrapper {
+  .banners__figure {
     margin: 0;
   }
 
@@ -75,7 +83,7 @@
   }
 
   .banners__btn-wrapper {
-    bottom: -40px;
+    bottom: -42px;
   }
 }
 
@@ -90,24 +98,22 @@
 
   .banners__subtitle {
     order: 2;
-    float: left;
     width: 473px;
-    margin-bottom: 43px;
+    margin-bottom: 46px;
   }
 
   .banners__list {
     order: 3;
-    float: left;
     width: 473px;
-    margin-bottom: 73px;
+    margin-bottom: 72px;
   }
 
-  .banners__wrapper {
+  .banners__slider-wrapper {
     order: 5;
-    margin-top: -480px;
+    width: 570px;
+    margin-top: -481px;
     margin-left: auto;
   }
-
 
   .banners__img {
     width: 570px;
@@ -116,11 +122,10 @@
 
   .banners__order {
     order: 4;
-    float: left;
   }
 
   .banners__caption {
-    margin-left: 280px;
+    margin-left: 282px;
 
     text-align: left;
   }

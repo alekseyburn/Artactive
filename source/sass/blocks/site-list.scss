@@ -7,10 +7,11 @@
 .site-list__link {
   display: flex;
   justify-content: center;
-  padding: 10px 0;
+  padding: 10px;
 
   font-weight: 600;
   font-size: 13px;
+  line-height: 28px;
   color: $main-text;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -26,6 +27,8 @@
   &:hover,
   &:focus {
     color: $pink;
+
+    transition: color 0.3s;
   }
 
   &:active {
@@ -36,8 +39,6 @@
 @media (min-width: $tablet-width) {
   .site-list__link {
     justify-content: flex-start;
-
-    line-height: 28px;
 
     &--phone {
       display: block;
@@ -77,7 +78,7 @@
 @media (max-width: $tablet-and-mobile-width) {
   .site-list {
     position: absolute;
-    top: -36px;
+    top: -999px;
     left: -$mobile-indent;
     z-index: 2;
 
@@ -88,13 +89,13 @@
 
   @media (min-width: $tablet-width) {
     .site-list {
-      top: -40px;
-      right: -$tablet-indent;
+      top: -95px;
+      right: -500px;
       left: auto;
 
       width: 300px;
-      min-height: 602px;
-      padding: 40px 65px;
+      min-height: 599px;
+      padding: 41px 67px;
 
       &::before {
         content: "";
@@ -116,8 +117,11 @@
     }
 
     .site-list__link {
+      padding-right: 0;
+      padding-left: 0;
+
       &--phone {
-        margin-bottom: 18px;
+        margin-bottom: 17px;
       }
     }
   }
@@ -128,6 +132,10 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+  }
+
+  .site-list__item:nth-last-child(2) {
+    margin-right: -25px;
   }
 
   .site-list__link {

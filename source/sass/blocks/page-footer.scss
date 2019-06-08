@@ -3,7 +3,7 @@
 }
 
 .page-footer__wrapper {
-  padding: 40px $mobile-indent 30px;
+  padding: 40px $mobile-indent 45px;
 }
 
 .page-footer__policy {
@@ -41,7 +41,8 @@
   .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 20px $tablet-indent;
+    align-items: center;
+    padding: 18px $tablet-indent;
   }
 
   .page-footer__policy {

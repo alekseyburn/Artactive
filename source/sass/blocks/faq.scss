@@ -1,9 +1,9 @@
 .faq {
-  padding: 0 $mobile-indent 80px;
+  padding: 0 $mobile-indent 85px;
 
   background-image: url("../img/bg-lines-mobile@1x.png");
   background-repeat: repeat-y;
-  background-position: center center;
+  background-position: center;
   background-size: contain;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -22,7 +22,7 @@
 }
 
 .faq__item {
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 
   &:last-of-type {
     margin-bottom: 0;
@@ -41,7 +41,7 @@
   .faq {
     position: relative;
 
-    padding: 0 $tablet-indent 100px;
+    padding: 0 $tablet-indent 105px;
 
     background-image: url("../img/bg-lines-tablet@1x.png");
 
@@ -65,15 +65,15 @@
   }
 
   .faq__title {
-    margin-bottom: 40px;
+    margin-bottom: 42px;
   }
 
   .faq__list {
-    margin-bottom: 50px;
+    margin-bottom: 54px;
   }
 
   .faq__item {
-    margin-bottom: 28px;
+    margin-bottom: 29px;
   }
 
   .faq__subtitle {
@@ -103,7 +103,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
   }
 
   .faq__item {
