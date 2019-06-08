@@ -1,10 +1,10 @@
 .reviews {
-  padding: 35px $mobile-indent 57px;
+  padding: 33px $mobile-indent 57px;
 
   background-image: url("../img/bg-lines-mobile@1x.png");
   background-repeat: repeat-y;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-lines-mobile@2x.png");
@@ -17,7 +17,7 @@
 
 .reviews__item {
   margin: 0 0 45px;
-  padding: 60px 22px 45px;
+  padding: 60px 20px 45px;
 
   background-color: $white;
   border-radius: 10px;
@@ -27,11 +27,11 @@
 .reviews__img {
   display: block;
   width: 136px;
-  margin: 0 auto 43px;
+  margin: 0 auto 42px;
 }
 
 .reviews__text {
-  margin: 0 0 30px;
+  margin: 0 0 32px;
 }
 
 .reviews__author {
@@ -42,9 +42,13 @@
   font-style: normal;
 }
 
+.reviews__author-link {
+  letter-spacing: 0.03em;
+}
+
 @media (min-width: $tablet-width) {
   .reviews {
-    padding: 75px $tablet-indent 78px;
+    padding: 73px $tablet-indent 78px;
 
     background-image: url("../img/bg-lines-tablet@1x.png");
 
@@ -59,17 +63,17 @@
   }
 
   .reviews__item {
-    margin-bottom: 55px;
-    padding: 60px 63px 45px;
+    margin-bottom: 42px;
+    padding: 56px 63px 51px;
   }
 
   .reviews__img {
     float: left;
-    margin-right: 50px;
+    margin-right: 51px;
   }
 
   .reviews__text {
-    margin-bottom: 0;
+    margin-bottom: 7px;
   }
 
   .reviews__author-link {
@@ -81,9 +85,10 @@
   .reviews {
     width: $desktop-width;
     margin: 0 auto;
-    padding: 135px $desktop-indent 125px;
+    padding: 131px $desktop-indent 125px;
 
     background-image: url("../img/bg-lines-desktop@1x.png");
+    background-size: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-lines-desktop@2x.png");
