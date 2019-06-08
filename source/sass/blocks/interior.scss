@@ -1,12 +1,10 @@
 .interior {
   margin-bottom: 0;
-  padding-top: 70px;
-  padding-bottom: 252px;
 
   background-color: $white;
   background-image: url("../img/photo-sofa-mobile@1x.png"), url("../img/bg-lines-mobile@1x.png");
   background-repeat: no-repeat, repeat-y;
-  background-position: right bottom, center;
+  background-position: right 85%, center;
   background-size: 281px, contain;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -14,21 +12,24 @@
   }
 }
 
+.interior__container {
+  padding: 70px $mobile-indent 252px;
+}
+
 .interior__subtitle {
-  margin-bottom: 35px;
+  margin-bottom: 34px;
 }
 
 .interior__text {
-  margin-bottom: 40px;
+  margin-bottom: 43px;
 }
 
 @media (min-width: $tablet-width) {
   .interior {
     position: relative;
 
-    padding-bottom: 400px;
-
     background-image: url("../img/photo-sofa-tablet@1x.png"), url("../img/bg-lines-tablet@1x.png");
+    background-position: right 66%, center;
     background-size: 536px, contain;
 
     &::after {
@@ -49,14 +50,18 @@
     }
   }
 
+  .interior__container {
+    padding: 73px $tablet-indent 400px;
+  }
+
   .interior__subtitle {
     width: 450px;
-    margin-bottom: 55px;
+    margin-bottom: 56px;
   }
 
   .interior__text {
     width: 548px;
-    margin-bottom: 45px;
+    margin-bottom: 46px;
   }
 
   .interior__link {
@@ -66,18 +71,15 @@
 
 @media (min-width: $desktop-width) {
   .interior {
-    padding-top: 125px;
-    padding-bottom: 570px;
-
     background-image: url("../img/photo-sofa-desktop@1x.png"), url("../img/bg-lines-desktop@1x.png");
     background-position: -250px center, center;
-    background-size: 1276px, cover;
+    background-size: 1276px, contain;
   }
 
   .interior__container {
     width: $desktop-width;
     margin: 0 auto;
-    padding: 0 $desktop-indent;
+    padding: 128px $desktop-indent 570px;
   }
 
   .interior__wrapper {
@@ -88,11 +90,10 @@
   }
 
   .interior__subtitle {
-    margin-bottom: 45px;
+    margin-bottom: 46px;
   }
 
   .interior__text {
-    width: 555px;
-    margin-bottom: 55px;
+    margin-bottom: 56px;
   }
 }
