@@ -5,7 +5,7 @@ let modalInitiate = function() {
   let close = document.querySelector(".modal__close-btn");
   let lastFocus;
 
-  if (!link || !popup || !overlay) return;
+  if (!link || !popup || !overlay || !close) return;
 
   let modalShow = function() {
     popup.classList.add("modal--show");

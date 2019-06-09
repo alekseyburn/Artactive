@@ -5,12 +5,12 @@ if(/Trident.*rv:/.test(navigator.userAgent)) {
 }
 
 //если cdn недоступен, загружаем полифил локально
-let loadFile = function (file) {
+window.loadFile = function (file) {
   let fileRef = document.createElement("script");
 
   fileRef.setAttribute("type", "text/javascript");
   fileRef.setAttribute("src", file);
-  document.getElementsByTagName("head")[0].appendChild(fileRef);
+  document.getElementsByTagName("body")[0].appendChild(fileRef);
 };
 
 let loadPicturefill = function () {

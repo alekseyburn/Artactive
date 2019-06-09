@@ -6,7 +6,7 @@
   <meta name="format-detection" content="telephone=no">
   <title>Копицентр «Artactive»</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="css/slick.min.css">
   <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/opensansitalic.woff2" as="font" crossorigin="anonymous">
@@ -19,30 +19,32 @@
 <body>
   <header class="page-header page-header--nojs">
     <div class="page-header__wrapper">
-      <a class="page-header__logo" href="index.html">
+      <a class="page-header__logo" href="index.html" tabindex="1">
         <picture>
           <source type="image/webp" srcset="../img/logo@1x.webp 1x, ../img/logo@2x.webp 2x">
-          <img class="page-header__logo-image" src="../img/logo@1x.png" srcset="../img/logo@2x.png 2x" alt="Копицентр «Artactive»">
+          <img class="page-header__logo-image" src="../img/logo@1x.png" srcset="../img/logo@2x.png 2x"
+               alt="Копицентр «Artactive»">
         </picture>
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button" aria-label="Отобразить/закрыть меню"></button>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a class="site-list__link" href="about.html">О нас</a></li>
-          <li class="site-list__item"><a class="site-list__link" href="services.html">Услуги</a></li>
-          <li class="site-list__item"><a class="site-list__link" href="reviews.html">Отзывы</a></li>
-          <li class="site-list__item"><a class="site-list__link" href="faq.html">FAQ</a></li>
-          <li class="site-list__item"><a class="site-list__link" href="contacts.html">Контакты</a></li>
-          <li class="site-list__item"><a class="site-list__link site-list__link--phone" href="tel:89201488131">+7 (920)
+          <li class="site-list__item"><a class="site-list__link" href="about.html" tabindex="2">О нас</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="services.html" tabindex="3">Услуги</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="reviews.html" tabindex="4">Отзывы</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="faq.html" tabindex="5">FAQ</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="contacts.html" tabindex="6">Контакты</a></li>
+          <li class="site-list__item"><a class="site-list__link site-list__link--phone" href="tel:89201488131"
+                                         tabindex="7">+7 (920)
             148 81 31</a></li>
-          <li class="site-list__item"><a class="site-list__link site-list__link--call-request" href="/">Заказать
+          <li class="site-list__item"><a class="site-list__link site-list__link--call-request" href="/" tabindex="8">Заказать
             звонок</a></li>
         </ul>
       </nav>
       <section class="promo">
         <b class="promo__slogan">Размер не&nbsp;имеет значения!</b>
         <h1 class="promo__title">Оперативная полиграфия и&nbsp;широкоформатная печать любого размера</h1>
-        <a class="promo__link button" href="order.html">Заказать печать</a>
+        <a class="promo__link button" href="order.html" tabindex="9">Заказать печать</a>
         <small class="promo__text">с доставкой по Ярославлю и&nbsp;Ярославской области</small>
       </section>
     </div>
@@ -51,7 +53,8 @@
     <section class="section about">
       <div class="about__wrapper">
         <h2 class="section__title about__title">1. О нас</h2>
-        <p class="section__subtitle section__subtitle--about about__subtitle">Полный спектр услуг — от дизайна до печати</p>
+        <p class="section__subtitle section__subtitle--about about__subtitle">Полный спектр услуг — от дизайна до
+          печати</p>
         <p class="section__text about__text">К вашим услугам мы предлагаем полный спектр работ, начиная от печати
           открыток, чертежей, баннеров, растяжек, создания буклетов и эксклюзивных календарей, и заканчивая постпечатной
           обработкой.</p>
@@ -95,23 +98,29 @@
             <div class="banners__slider-wrapper">
               <figure class="banners__figure">
                 <picture>
-                  <source type="image/webp" media="(min-width: 1170px)" srcset="../img/photo-banner-desktop@1x.webp 1x, ../img/photo-banner-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 780px)" srcset="../img/photo-banner-tablet@1x.webp 1x, ../img/photo-banner-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="../img/photo-banner-mobile@1x.webp 1x, ../img/photo-banner-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1170px)"
+                          srcset="../img/photo-banner-desktop@1x.webp 1x, ../img/photo-banner-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 780px)"
+                          srcset="../img/photo-banner-tablet@1x.webp 1x, ../img/photo-banner-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                          srcset="../img/photo-banner-mobile@1x.webp 1x, ../img/photo-banner-mobile@2x.webp 2x">
 
-                  <source media="(min-width: 1170px)" srcset="../img/photo-banner-desktop@1x.png 1x, ../img/photo-banner-desktop@2x.png 2x">
-                  <source media="(min-width: 780px)" srcset="../img/photo-banner-tablet@1x.png 1x, ../img/photo-banner-tablet@2x.png 2x">
-                  <img class="banners__img" src="../img/photo-banner-mobile@1x.jpg" srcset="../img/photo-banner-mobile@2x.jpg 2x" alt="Растяжка на ул. Ленина">
+                  <source media="(min-width: 1170px)"
+                          srcset="../img/photo-banner-desktop@1x.png 1x, ../img/photo-banner-desktop@2x.png 2x">
+                  <source media="(min-width: 780px)"
+                          srcset="../img/photo-banner-tablet@1x.png 1x, ../img/photo-banner-tablet@2x.png 2x">
+                  <img class="banners__img" src="../img/photo-banner-mobile@1x.jpg"
+                       srcset="../img/photo-banner-mobile@2x.jpg 2x" alt="Растяжка на ул. Ленина">
                 </picture>
                 <figcaption class="banners__caption">Растяжка на ул. Ленина</figcaption>
               </figure>
               <div class="slider banners__btn-wrapper">
-                <button class="slider__btn slider__btn--prev" type="button" aria-label="Предыдущее фото">
+                <button class="slider__btn slider__btn--prev" type="button" aria-label="Предыдущее фото" tabindex="11">
                   <svg class="slider__btn-icon" width="91" height="14">
                     <use xlink:href="../img/sprite.svg#icon-left-arrow"></use>
                   </svg>
                 </button>
-                <button class="slider__btn slider__btn--next" type="button" aria-label="Следующее фото">
+                <button class="slider__btn slider__btn--next" type="button" aria-label="Следующее фото" tabindex="12">
                   <svg class="slider__btn-icon" width="91" height="14">
                     <use xlink:href="../img/sprite.svg#icon-right-arrow"></use>
                   </svg>
@@ -121,7 +130,7 @@
             <div class="banners__order order">
               <i class="order__question">Есть вопросы?</i>
               <p class="order__text">Закажите консультацию</p>
-              <a class="order__link button button-js" href="order.html">Заказать</a>
+              <a class="order__link button button-js" href="order.html" tabindex="10">Заказать</a>
             </div>
           </div>
         </li>
@@ -137,7 +146,7 @@
                 разной плотности, на глянцевом и матовом холсте или на самоклеющейся пленке. также можем предложить
                 обработку и редактирование ваших фотографий силами наших дизайнеров: композиции, фотоколлаж, ретушь,
                 различные эффекты</p>
-              <a class="interior__link button" href="order.html">Оставить заявку</a>
+              <a class="interior__link button" href="order.html" tabindex="13">Оставить заявку</a>
             </div>
           </div>
         </li>
@@ -161,13 +170,14 @@
               <p class="request__text">Оставьте заявку на&nbsp;консультацию</p>
               <form class="form" action="https://echo.htmlacademy.ru" method="post">
                 <label class="form__label input-data">
-                  <input class="input-data__field" type="text" name="name" placeholder="Имя" aria-label="Имя" required>
+                  <input class="input-data__field" type="text" name="name" placeholder="Имя" aria-label="Имя" required
+                         tabindex="14">
                 </label>
                 <label class="form__label input-data">
                   <input class="input-data__field" type="tel" name="phone" placeholder="Телефон" aria-label="Телефон"
-                         required>
+                         required tabindex="15">
                 </label>
-                <button class="form__send button" type="submit">Отправить</button>
+                <button class="form__send button" type="submit" tabindex="16">Отправить</button>
               </form>
             </div>
           </div>
@@ -214,21 +224,21 @@
             нервничал, не знал, с чего начать. Остался доволен, потому что мне всё объяснили, показали и сделали по
             высшему разряду. Советую!</p>
           <cite class="reviews__author">Александров Максим, 24 года</cite>
-          <a class="reviews__author-link" href="vk.com/mr.sharp">vk.com/mr.sharp</a>
+          <a class="reviews__author-link" href="vk.com/mr.sharp" tabindex="15">vk.com/mr.sharp</a>
         </blockquote>
       </div>
-        <div class="slider reviews__btn-wrapper">
-          <button class="slider__btn slider__btn--prev" type="button" aria-label="Предыдущий отзыв">
-            <svg class="slider__btn-icon" width="91" height="14">
-              <use xlink:href="../img/sprite.svg#icon-left-arrow"></use>
-            </svg>
-          </button>
-          <button class="slider__btn slider__btn--next" type="button" aria-label="Следующий отзыв">
-            <svg class="slider__btn-icon" width="91" height="14">
-              <use xlink:href="../img/sprite.svg#icon-right-arrow"></use>
-            </svg>
-          </button>
-        </div>
+      <div class="slider reviews__btn-wrapper">
+        <button class="slider__btn slider__btn--prev" type="button" aria-label="Предыдущий отзыв">
+          <svg class="slider__btn-icon" width="91" height="14">
+            <use xlink:href="../img/sprite.svg#icon-left-arrow"></use>
+          </svg>
+        </button>
+        <button class="slider__btn slider__btn--next" type="button" aria-label="Следующий отзыв">
+          <svg class="slider__btn-icon" width="91" height="14">
+            <use xlink:href="../img/sprite.svg#icon-right-arrow"></use>
+          </svg>
+        </button>
+      </div>
 
     </section>
     <section class="section faq">
@@ -345,9 +355,7 @@
   </main>
   <script src="js/navmenu.min.js"></script>
   <script src="js/iepolyfills.min.js"></script>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/loadScripts.min.js"></script>
   <script src="js/slider.min.js"></script>
   <script src="js/modal.min.js"></script>
 </body>
