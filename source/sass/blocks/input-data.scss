@@ -31,6 +31,14 @@
     &--faq {
       width: 180px;
     }
+
+    &--modal {
+      color: $white;
+
+      &::placeholder {
+        color: $white;
+      }
+    }
   }
 }
 

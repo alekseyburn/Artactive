@@ -18,6 +18,12 @@
       background-image: url("../img/shape-question-mobile@2x.png");
     }
   }
+
+  &--modal {
+    padding: 40px 25px;
+
+    box-shadow: 0 23px 32px rgba(81, 8, 86, 0.33);
+  }
 }
 
 .request__question {
@@ -79,6 +85,22 @@
         content: none;
       }
     }
+
+    &--modal {
+      padding: 55px 62px;
+
+      color: $white;
+
+      background-color: $purple;
+      background-image: url("../img/bg-header-tablet@1x.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 10px;
+
+      &::after {
+        content: none;
+      }
+    }
   }
 
   .request__text {
@@ -112,6 +134,10 @@
 
       background-position: 30px center;
       background-size: 241px;
+    }
+
+    &--modal {
+      width: 360px;
     }
   }
 

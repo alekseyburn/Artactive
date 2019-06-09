@@ -36,9 +36,17 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+
+    &--modal {
+      display: block;
+    }
   }
 
   .form__send {
     width: 190px;
+
+    &--modal {
+      width: 100%;
+    }
   }
 }

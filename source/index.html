@@ -6,6 +6,7 @@
   <meta name="format-detection" content="telephone=no">
   <title>Копицентр «Artactive»</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/opensansitalic.woff2" as="font" crossorigin="anonymous">
@@ -120,7 +121,7 @@
             <div class="banners__order order">
               <i class="order__question">Есть вопросы?</i>
               <p class="order__text">Закажите консультацию</p>
-              <a class="order__link button" href="order.html">Заказать</a>
+              <a class="order__link button button-js" href="order.html">Заказать</a>
             </div>
           </div>
         </li>
@@ -189,6 +190,33 @@
           <cite class="reviews__author">Александров Максим, 24 года</cite>
           <a class="reviews__author-link" href="vk.com/mr.sharp">vk.com/mr.sharp</a>
         </blockquote>
+        <blockquote class="reviews__item">
+          <picture>
+            <source type="image/webp"
+                    srcset="../img/photo-author-mobile@1x.webp 1x, ../img/photo-author-mobile@2x.webp 2x">
+            <img class="reviews__img" src="../img/photo-author-mobile@1x.png"
+                 srcset="../img/photo-author-mobile@2x.png 2x" alt="Фото ревьювера">
+          </picture>
+          <p class="reviews__text">Обратился в компанию АртАктив за визитками. Это мой первый опыт, поэтому немного
+            нервничал, не знал, с чего начать. Остался доволен, потому что мне всё объяснили, показали и сделали по
+            высшему разряду. Советую!</p>
+          <cite class="reviews__author">Александров Максим, 24 года</cite>
+          <a class="reviews__author-link" href="vk.com/mr.sharp">vk.com/mr.sharp</a>
+        </blockquote>
+        <blockquote class="reviews__item">
+          <picture>
+            <source type="image/webp"
+                    srcset="../img/photo-author-second@1x.webp 1x, ../img/photo-author-second@2x.webp 2x">
+            <img class="reviews__img" src="../img/photo-author-second@1x.png"
+                 srcset="../img/photo-author-second@2x.png 2x" alt="Фото ревьювера">
+          </picture>
+          <p class="reviews__text">Обратился в компанию АртАктив за визитками. Это мой первый опыт, поэтому немного
+            нервничал, не знал, с чего начать. Остался доволен, потому что мне всё объяснили, показали и сделали по
+            высшему разряду. Советую!</p>
+          <cite class="reviews__author">Александров Максим, 24 года</cite>
+          <a class="reviews__author-link" href="vk.com/mr.sharp">vk.com/mr.sharp</a>
+        </blockquote>
+      </div>
         <div class="slider reviews__btn-wrapper">
           <button class="slider__btn slider__btn--prev" type="button" aria-label="Предыдущий отзыв">
             <svg class="slider__btn-icon" width="91" height="14">
@@ -201,7 +229,7 @@
             </svg>
           </button>
         </div>
-      </div>
+
     </section>
     <section class="section faq">
       <h2 class="section__title faq__title">4. Частые вопросы (FAQ)</h2>
@@ -296,8 +324,31 @@
         <p class="page-footer__designed">Designed by Sergey Strogiy</p>
       </div>
     </footer>
+    <section class="modal request request--modal">
+      <h3 class="visually-hidden">Форма для заказа</h3>
+      <i class="request__question">Остались вопросы?</i>
+      <p class="request__text request__text--modal">Оставьте заявку на&nbsp;консультацию</p>
+      <form class="form form--modal" action="https://echo.htmlacademy.ru" method="post">
+        <label class="form__label form__label--modal input-data">
+          <input class="input-data__field input-data__field--modal" type="text" name="name" placeholder="Имя"
+                 aria-label="Имя" required>
+        </label>
+        <label class="form__label form__label--modal input-data">
+          <input class="input-data__field input-data__field--modal" type="tel" name="phone" placeholder="Телефон"
+                 aria-label="Телефон" required>
+        </label>
+        <button class="button form__send form__send--modal" type="submit">Отправить</button>
+      </form>
+      <button class="modal__close-btn" type="button" aria-label="Закрыть"></button>
+    </section>
+    <div class="overlay" tabindex="-1"></div>
   </main>
   <script src="js/navmenu.min.js"></script>
   <script src="js/iepolyfills.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/slider.min.js"></script>
+  <script src="js/modal.min.js"></script>
 </body>
 </html>
