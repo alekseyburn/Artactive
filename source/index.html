@@ -6,6 +6,7 @@
   <meta name="format-detection" content="telephone=no">
   <title>Копицентр «Artactive»</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/opensansitalic.woff2" as="font" crossorigin="anonymous">
@@ -189,6 +190,33 @@
           <cite class="reviews__author">Александров Максим, 24 года</cite>
           <a class="reviews__author-link" href="vk.com/mr.sharp">vk.com/mr.sharp</a>
         </blockquote>
+        <blockquote class="reviews__item">
+          <picture>
+            <source type="image/webp"
+                    srcset="../img/photo-author-mobile@1x.webp 1x, ../img/photo-author-mobile@2x.webp 2x">
+            <img class="reviews__img" src="../img/photo-author-mobile@1x.png"
+                 srcset="../img/photo-author-mobile@2x.png 2x" alt="Фото ревьювера">
+          </picture>
+          <p class="reviews__text">Обратился в компанию АртАктив за визитками. Это мой первый опыт, поэтому немного
+            нервничал, не знал, с чего начать. Остался доволен, потому что мне всё объяснили, показали и сделали по
+            высшему разряду. Советую!</p>
+          <cite class="reviews__author">Александров Максим, 24 года</cite>
+          <a class="reviews__author-link" href="vk.com/mr.sharp">vk.com/mr.sharp</a>
+        </blockquote>
+        <blockquote class="reviews__item">
+          <picture>
+            <source type="image/webp"
+                    srcset="../img/photo-author-second@1x.webp 1x, ../img/photo-author-second@2x.webp 2x">
+            <img class="reviews__img" src="../img/photo-author-second@1x.png"
+                 srcset="../img/photo-author-second@2x.png 2x" alt="Фото ревьювера">
+          </picture>
+          <p class="reviews__text">Обратился в компанию АртАктив за визитками. Это мой первый опыт, поэтому немного
+            нервничал, не знал, с чего начать. Остался доволен, потому что мне всё объяснили, показали и сделали по
+            высшему разряду. Советую!</p>
+          <cite class="reviews__author">Александров Максим, 24 года</cite>
+          <a class="reviews__author-link" href="vk.com/mr.sharp">vk.com/mr.sharp</a>
+        </blockquote>
+      </div>
         <div class="slider reviews__btn-wrapper">
           <button class="slider__btn slider__btn--prev" type="button" aria-label="Предыдущий отзыв">
             <svg class="slider__btn-icon" width="91" height="14">
@@ -201,7 +229,7 @@
             </svg>
           </button>
         </div>
-      </div>
+
     </section>
     <section class="section faq">
       <h2 class="section__title faq__title">4. Частые вопросы (FAQ)</h2>
@@ -299,5 +327,9 @@
   </main>
   <script src="js/navmenu.min.js"></script>
   <script src="js/iepolyfills.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/slider.min.js"></script>
 </body>
 </html>

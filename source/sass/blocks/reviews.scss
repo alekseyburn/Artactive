@@ -16,7 +16,8 @@
 }
 
 .reviews__item {
-  margin: 0 0 45px;
+  width: 280px;
+  margin: 10px 12px 45px;
   padding: 60px 20px 45px;
 
   background-color: $white;
@@ -64,7 +65,8 @@
   }
 
   .reviews__item {
-    margin-bottom: 42px;
+    width: 710px;
+    margin: 10px 12px 42px;
     padding: 56px 63px 51px;
   }
 
@@ -100,9 +102,35 @@
     margin-bottom: 75px;
   }
 
+  .reviews__wrapper {
+    position: relative;
+    z-index: 3;
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 140px;
+      bottom: 0;
+
+      z-index: 1;
+    }
+
+    &::after {
+      left: 0;
+      box-shadow: inset 43px 0 60px -23px $white;
+    }
+
+    &::before {
+      right: 0;
+      box-shadow: inset -43px 0 60px -23px $white;
+    }
+  }
+
   .reviews__item {
     width: 844px;
-    margin: 0 auto 40px;
+    margin: 10px 12px 40px;
     padding: 55px 66px 55px;
   }
 
