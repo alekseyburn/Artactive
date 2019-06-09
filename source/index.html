@@ -121,7 +121,7 @@
             <div class="banners__order order">
               <i class="order__question">Есть вопросы?</i>
               <p class="order__text">Закажите консультацию</p>
-              <a class="order__link button" href="order.html">Заказать</a>
+              <a class="order__link button button-js" href="order.html">Заказать</a>
             </div>
           </div>
         </li>
@@ -324,6 +324,24 @@
         <p class="page-footer__designed">Designed by Sergey Strogiy</p>
       </div>
     </footer>
+    <section class="modal request request--modal">
+      <h3 class="visually-hidden">Форма для заказа</h3>
+      <i class="request__question">Остались вопросы?</i>
+      <p class="request__text request__text--modal">Оставьте заявку на&nbsp;консультацию</p>
+      <form class="form form--modal" action="https://echo.htmlacademy.ru" method="post">
+        <label class="form__label form__label--modal input-data">
+          <input class="input-data__field input-data__field--modal" type="text" name="name" placeholder="Имя"
+                 aria-label="Имя" required>
+        </label>
+        <label class="form__label form__label--modal input-data">
+          <input class="input-data__field input-data__field--modal" type="tel" name="phone" placeholder="Телефон"
+                 aria-label="Телефон" required>
+        </label>
+        <button class="button form__send form__send--modal" type="submit">Отправить</button>
+      </form>
+      <button class="modal__close-btn" type="button" aria-label="Закрыть"></button>
+    </section>
+    <div class="overlay" tabindex="-1"></div>
   </main>
   <script src="js/navmenu.min.js"></script>
   <script src="js/iepolyfills.min.js"></script>
@@ -331,5 +349,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="js/slider.min.js"></script>
+  <script src="js/modal.min.js"></script>
 </body>
 </html>
