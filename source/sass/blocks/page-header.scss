@@ -1,25 +1,31 @@
 .page-header {
   background-color: $purple;
-  background-image: url("../img/bg-header-mobile@1x.jpg");
   background-repeat: repeat-y;
   background-position: center top;
   background-size: cover;
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/bg-header-mobile@2x.jpg");
+  &.lazy-bg-loaded {
+    background-image: url("../img/bg-header-mobile@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-header-mobile@2x.jpg");
+    }
   }
 }
 
 .page-header__wrapper {
   padding: 23px $mobile-indent 67px;
 
-  background-image: url("../img/print-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: 0 47px;
   background-size: 311px 321px;
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/print-mobile@2x.png");
+  &.lazy-bg-loaded {
+    background-image: url("../img/print-mobile@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/print-mobile@2x.png");
+    }
   }
 }
 
@@ -43,7 +49,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-header {
+  .page-header.lazy-bg-loaded {
     background-image: url("../img/bg-header-tablet@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -54,12 +60,15 @@
   .page-header__wrapper {
     padding: 27px $tablet-indent 94px;
 
-    background-image: url("../img/print-tablet@1x.png");
     background-position: left 57px;
     background-size: 456px 519px;
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/print-tablet@2x.png");
+    &.lazy-bg-loaded {
+      background-image: url("../img/print-tablet@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/print-tablet@2x.png");
+      }
     }
   }
 
@@ -82,7 +91,7 @@
 
     display: block;
 
-    transition: top 0.5s;
+    transition: top 0.6s ease-out;
   }
 
   .page-header--menu-opened .main-nav__toggle {
@@ -91,6 +100,8 @@
 
     width: 16px;
     height: 16px;
+
+    transition: right 0.5s;
 
     &::before,
     &::after {
@@ -150,11 +161,14 @@
 @media (min-width: $desktop-width) {
   .page-header {
     background-color: $purple;
-    background-image: url("../img/bg-header-desktop@1x.jpg");
     background-repeat: repeat-y;
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-header-desktop@2x.jpg");
+    &.lazy-bg-loaded {
+      background-image: url("../img/bg-header-desktop@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-header-desktop@2x.jpg");
+      }
     }
   }
 
@@ -166,12 +180,15 @@
     margin: 0 auto;
     padding: 62px $desktop-indent 190px;
 
-    background-image: url("../img/print-desktop@1x.png");
     background-position: -95px center;
     background-size: 655px 630px;
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/print-desktop@2x.png");
+    &.lazy-bg-loaded {
+      background-image: url("../img/print-desktop@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/print-desktop@2x.png");
+      }
     }
   }
 

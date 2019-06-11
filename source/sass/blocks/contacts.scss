@@ -34,32 +34,18 @@
   line-height: 18px;
 
   background-repeat: no-repeat;
-  background-position: left 5px;
+  background-position: left 2px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 3px;
-    left: 0;
-
-    width: 20px;
-    height: 20px;
-
-    background-repeat: no-repeat;
+  &--address.lazy-bg-loaded {
+    background-image: url("../img/icon-marker.svg");
   }
 
-  &--address::before {
-    background-image: url("../../img/icon-marker.svg");
+  &--email.lazy-bg-loaded {
+    background-image: url("../img/icon-letter.svg");
   }
 
-  &--email::before {
-    background-image: url("../../img/icon-letter.svg");
-  }
-
-  &--phone::before {
-    top: 0;
-
-    background-image: url("../../img/icon-phone.svg");
+  &--phone.lazy-bg-loaded {
+    background-image: url("../img/icon-phone.svg");
   }
 }
 
