@@ -7,15 +7,18 @@
     color: $white;
 
     background-color: $purple;
-    background-image: url("../img/shape-question-mobile@1x.png");
     background-repeat: no-repeat;
     background-position: top right;
     background-size: 96px;
     border-radius: 10px;
     box-shadow: 0 23px 32px rgba(81, 8, 86, 0.33);
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/shape-question-mobile@2x.png");
+    &.lazy-bg-loaded {
+      background-image: url("../img/shape-question-mobile@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/shape-question-mobile@2x.png");
+      }
     }
   }
 
@@ -62,10 +65,14 @@
       width: 389px;
       height: 287px;
 
-      background-image: url("../img/picture-letter@1x.png");
+      background-size: cover;
 
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/picture-letter@2x.png");
+      &.lazy-bg-loaded::after {
+        background-image: url("../img/picture-letter@1x.png");
+
+        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+          background-image: url("../img/picture-letter@2x.png");
+        }
       }
     }
 
@@ -73,12 +80,15 @@
       width: 100%;
       padding: 36px 35px 14px;
 
-      background-image: url("../img/shape-question-tablet@1x.png");
       background-position: 105% -60px;
       background-size: 241px;
 
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/shape-question-tablet@2x.png");
+      &.lazy-bg-loaded {
+        background-image: url("../img/shape-question-tablet@1x.png");
+
+        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+          background-image: url("../img/shape-question-tablet@2x.png");
+        }
       }
 
       &::after {
@@ -92,10 +102,13 @@
       color: $white;
 
       background-color: $purple;
-      background-image: url("../img/bg-header-tablet@1x.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       border-radius: 10px;
+
+      &.lazy-bg-loaded {
+        background-image: url("../img/bg-header-tablet@1x.jpg");
+      }
 
       &::after {
         content: none;
@@ -120,7 +133,9 @@
 
       width: 503px;
       height: 340px;
+    }
 
+    &.lazy-bg-loaded::after {
       background-image: url("../img/picture-letter-desktop@1x.png");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {

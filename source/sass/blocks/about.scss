@@ -1,12 +1,15 @@
 .about {
   padding: 37px $mobile-indent 55px;
 
-  background-image: url("../img/bg-lines-mobile@1x.png");
   background-repeat: repeat-y;
   background-size: contain;
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/bg-lines-mobile@2x.png");
+  &.lazy-bg-loaded {
+    background-image: url("../img/bg-lines-mobile@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-lines-mobile@2x.png");
+    }
   }
 }
 
@@ -32,10 +35,12 @@
 
     padding: 51px $tablet-indent 142px;
 
-    background-image: url("../img/bg-lines-tablet@1x.png");
+    &.lazy-bg-loaded {
+      background-image: url("../img/bg-lines-tablet@1x.png");
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-lines-tablet@2x.png");
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-lines-tablet@2x.png");
+      }
     }
 
     &::after {
@@ -47,8 +52,11 @@
       width: 11px;
       height: 130px;
 
-      background-image: url("../img/shape-lines.png");
       transform: translateX(-50%);
+    }
+
+    &.lazy-bg-loaded::after {
+      background-image: url("../img/shape-lines.png");
     }
   }
 
@@ -75,11 +83,14 @@
     margin: 0 auto;
     padding: 107px $desktop-indent 105px;
 
-    background-image: url("../img/bg-lines-desktop@1x.png");
     background-size: cover;
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-lines-desktop@2x.png");
+    &.lazy-bg-loaded {
+      background-image: url("../img/bg-lines-desktop@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-lines-desktop@2x.png");
+      }
     }
   }
 

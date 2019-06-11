@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="no-js">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
   <title>Копицентр «Artactive»</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="stylesheet" href="css/slick.min.css">
   <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/opensansitalic.woff2" as="font" crossorigin="anonymous">
@@ -15,16 +14,22 @@
   <link rel="preload" href="fonts/MullerExtraBold.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/MullerHeavy.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/MullerMedium.woff2" as="font" crossorigin="anonymous">
+  <script>document.documentElement.classList.remove("no-js");</script>
 </head>
 <body>
-  <header class="page-header page-header--nojs">
-    <div class="page-header__wrapper">
+  <header class="page-header page-header--nojs lazy-bg">
+    <div class="page-header__wrapper lazy-bg">
       <a class="page-header__logo" href="index.html" tabindex="1">
         <picture>
-          <source type="image/webp" srcset="../img/logo@1x.webp 1x, ../img/logo@2x.webp 2x">
-          <img class="page-header__logo-image" src="../img/logo@1x.png" srcset="../img/logo@2x.png 2x"
-               alt="Копицентр «Artactive»">
+          <source type="image/webp" data-srcset="../img/logo@1x.webp 1x, ../img/logo@2x.webp 2x">
+          <img class="page-header__logo-image lazy" data-srcset="../img/logo@1x.png 1x, ../img/logo@2x.png 2x" alt="Копицентр «Artactive»">
         </picture>
+        <noscript>
+          <picture>
+            <source type="image/webp" srcset="../img/logo@1x.webp 1x, ../img/logo@2x.webp 2x">
+            <img class="page-header__logo-image" src="../img/logo@1x.png" srcset="../img/logo@2x.png 2x" alt="Копицентр «Artactive»">
+          </picture>
+        </noscript>
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button" aria-label="Отобразить/закрыть меню"></button>
@@ -34,14 +39,11 @@
           <li class="site-list__item"><a class="site-list__link" href="reviews.html" tabindex="4">Отзывы</a></li>
           <li class="site-list__item"><a class="site-list__link" href="faq.html" tabindex="5">FAQ</a></li>
           <li class="site-list__item"><a class="site-list__link" href="contacts.html" tabindex="6">Контакты</a></li>
-          <li class="site-list__item"><a class="site-list__link site-list__link--phone" href="tel:89201488131"
-                                         tabindex="7">+7 (920)
-            148 81 31</a></li>
-          <li class="site-list__item"><a class="site-list__link site-list__link--call-request" href="/" tabindex="8">Заказать
-            звонок</a></li>
+          <li class="site-list__item"><a class="site-list__link site-list__link--phone" href="tel:89201488131" tabindex="7">+7 (920) 148 81 31</a></li>
+          <li class="site-list__item"><a class="site-list__link site-list__link--call-request" href="/" tabindex="8">Заказать звонок</a></li>
         </ul>
       </nav>
-      <section class="promo">
+      <section class="promo revealator-slideup revealator-once">
         <b class="promo__slogan">Размер не&nbsp;имеет значения!</b>
         <h1 class="promo__title">Оперативная полиграфия и&nbsp;широкоформатная печать любого размера</h1>
         <a class="promo__link button" href="order.html" tabindex="9">Заказать печать</a>
@@ -50,32 +52,25 @@
     </div>
   </header>
   <main class="page-main">
-    <section class="section about">
-      <div class="about__wrapper">
+    <section class="section about lazy-bg">
+      <div class="about__wrapper revealator-slideup revealator-once">
         <h2 class="section__title about__title">1. О нас</h2>
-        <p class="section__subtitle section__subtitle--about about__subtitle">Полный спектр услуг — от дизайна до
-          печати</p>
-        <p class="section__text about__text">К вашим услугам мы предлагаем полный спектр работ, начиная от печати
-          открыток, чертежей, баннеров, растяжек, создания буклетов и эксклюзивных календарей, и заканчивая постпечатной
-          обработкой.</p>
-        <p class="section__text about__text">В копицентре не просто предоставляют услуги печати: мы ориентируемся на
-          комплексное обслуживание. Все услуги, будь то оперативная цифровая печать открыток или разработка серии
-          календарей, Вы можете получить в одном месте, воспользовавшись сопутствующими услугами копицентра.</p>
-        <p class="section__text about__text">При этом работа выполняется в максимально сжатые сроки и не в ущерб
-          качеству
-          конечного результата, которое неизменно остается на высоте.</p>
+        <p class="section__subtitle section__subtitle--about about__subtitle">Полный спектр услуг — от дизайна до печати</p>
+        <p class="section__text about__text">К вашим услугам мы предлагаем полный спектр работ, начиная от печати открыток, чертежей, баннеров, растяжек, создания буклетов и эксклюзивных календарей, и заканчивая постпечатной обработкой.</p>
+        <p class="section__text about__text">В копицентре не просто предоставляют услуги печати: мы ориентируемся на комплексное обслуживание. Все услуги, будь то оперативная цифровая печать открыток или разработка серии календарей, Вы можете получить в одном месте, воспользовавшись сопутствующими услугами копицентра.</p>
+        <p class="section__text about__text">При этом работа выполняется в максимально сжатые сроки и не в ущерб качеству конечного результата, которое неизменно остается на высоте.</p>
       </div>
-      <ul class="about__list process-list">
-        <li class="process-list__item process-list__item--book">
+      <ul class="about__list process-list revealator-slideright revealator-once lazy-bg">
+        <li class="process-list__item process-list__item--book lazy-bg">
           <p class="process-list__text">Приём и детальное обсуждение заказа</p>
         </li>
-        <li class="process-list__item process-list__item--tablet">
+        <li class="process-list__item process-list__item--tablet lazy-bg">
           <p class="process-list__text">Создание и согласование дизайн-макета</p>
         </li>
-        <li class="process-list__item process-list__item--tape">
+        <li class="process-list__item process-list__item--tape lazy-bg">
           <p class="process-list__text">Печать и постпечатная обработка изделий любых&nbsp;размеров</p>
         </li>
-        <li class="process-list__item process-list__item--car">
+        <li class="process-list__item process-list__item--car lazy-bg">
           <p class="process-list__text">Доставка готовой продукции</p>
         </li>
       </ul>
@@ -85,9 +80,9 @@
       <ul class="services__list">
         <li class="services__item banners">
           <div class="banners__container">
-            <h3 class="section__subtitle section__subtitle--services banners__subtitle">Широкоформатная печать баннеров,
-              растяжек, афиш</h3>
-            <ul class="banners__list">
+            <h3
+              class="section__subtitle section__subtitle--services banners__subtitle revealator-slideright revealator-once">Широкоформатная печать баннеров, растяжек, афиш</h3>
+            <ul class="banners__list revealator-slideright revealator-once">
               <li class="banners__item">подготовка макетов к печати, дизайн рекламных баннеров</li>
               <li class="banners__item">срочная печать за 3 часа</li>
               <li class="banners__item">проварка карманов и сварка нескольких изображений</li>
@@ -95,23 +90,28 @@
               <li class="banners__item">изготовление цветопробы</li>
               <li class="banners__item">доставка баннеров</li>
             </ul>
-            <div class="banners__slider-wrapper">
+            <div class="banners__slider-wrapper revealator-slideup revealator-once">
               <figure class="banners__figure">
                 <picture>
-                  <source type="image/webp" media="(min-width: 1170px)"
-                          srcset="../img/photo-banner-desktop@1x.webp 1x, ../img/photo-banner-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 780px)"
-                          srcset="../img/photo-banner-tablet@1x.webp 1x, ../img/photo-banner-tablet@2x.webp 2x">
-                  <source type="image/webp"
-                          srcset="../img/photo-banner-mobile@1x.webp 1x, ../img/photo-banner-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1170px)" data-srcset="../img/photo-banner-desktop@1x.webp 1x, ../img/photo-banner-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 780px)" data-srcset="../img/photo-banner-tablet@1x.webp 1x, ../img/photo-banner-tablet@2x.webp 2x">
+                  <source type="image/webp" data-srcset="../img/photo-banner-mobile@1x.webp 1x, ../img/photo-banner-mobile@2x.webp 2x">
 
-                  <source media="(min-width: 1170px)"
-                          srcset="../img/photo-banner-desktop@1x.png 1x, ../img/photo-banner-desktop@2x.png 2x">
-                  <source media="(min-width: 780px)"
-                          srcset="../img/photo-banner-tablet@1x.png 1x, ../img/photo-banner-tablet@2x.png 2x">
-                  <img class="banners__img" src="../img/photo-banner-mobile@1x.jpg"
-                       srcset="../img/photo-banner-mobile@2x.jpg 2x" alt="Растяжка на ул. Ленина">
+                  <source media="(min-width: 1170px)" data-srcset="../img/photo-banner-desktop@1x.png 1x, ../img/photo-banner-desktop@2x.png 2x">
+                  <source media="(min-width: 780px)" data-srcset="../img/photo-banner-tablet@1x.png 1x, ../img/photo-banner-tablet@2x.png 2x">
+                  <img class="banners__img lazy" data-srcset="../img/photo-banner-mobile@1x.jpg 1x, ../img/photo-banner-mobile@2x.jpg 2x" alt="Растяжка на ул. Ленина">
                 </picture>
+                <noscript>
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1170px)" srcset="../img/photo-banner-desktop@1x.webp 1x, ../img/photo-banner-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 780px)" srcset="../img/photo-banner-tablet@1x.webp 1x, ../img/photo-banner-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="../img/photo-banner-mobile@1x.webp 1x, ../img/photo-banner-mobile@2x.webp 2x">
+
+                    <source media="(min-width: 1170px)" srcset="../img/photo-banner-desktop@1x.png 1x, ../img/photo-banner-desktop@2x.png 2x">
+                    <source media="(min-width: 780px)" srcset="../img/photo-banner-tablet@1x.png 1x, ../img/photo-banner-tablet@2x.png 2x">
+                    <img class="banners__img" src="../img/photo-banner-mobile@1x.jpg" srcset="../img/photo-banner-mobile@2x.jpg 2x" alt="Растяжка на ул. Ленина">
+                  </picture>
+                </noscript>
                 <figcaption class="banners__caption">Растяжка на ул. Ленина</figcaption>
               </figure>
               <div class="slider banners__btn-wrapper">
@@ -127,55 +127,38 @@
                 </button>
               </div>
             </div>
-            <div class="banners__order order">
+            <div class="banners__order order revealator-slideright revealator-once">
               <i class="order__question">Есть вопросы?</i>
               <p class="order__text">Закажите консультацию</p>
               <a class="order__link button button-js" href="order.html" tabindex="10">Заказать</a>
             </div>
           </div>
         </li>
-        <li class="services__item interior">
+        <li class="services__item interior lazy-bg">
           <div class="interior__container">
-            <div class="interior__wrapper">
-              <h3 class="section__subtitle section__subtitle--interior interior__subtitle">Широкоформатная печать для
-                вашего
-                интерьера</h3>
-              <p class="section__text interior__text">Печатаем&nbsp;широкоформатные&nbsp;фотографии на глянцевой и
-                матовой
-                фотобумаге
-                разной плотности, на глянцевом и матовом холсте или на самоклеющейся пленке. также можем предложить
-                обработку и редактирование ваших фотографий силами наших дизайнеров: композиции, фотоколлаж, ретушь,
-                различные эффекты</p>
+            <div class="interior__wrapper revealator-slideup revealator-once">
+              <h3 class="section__subtitle section__subtitle--interior interior__subtitle">Широкоформатная печать для вашего интерьера</h3>
+              <p class="section__text interior__text">Печатаем&nbsp;широкоформатные&nbsp;фотографии на глянцевой и матовой фотобумаге разной плотности, на глянцевом и матовом холсте или на самоклеющейся пленке. также можем предложить обработку и редактирование ваших фотографий силами наших дизайнеров: композиции, фотоколлаж, ретушь, различные эффекты</p>
               <a class="interior__link button" href="order.html" tabindex="13">Оставить заявку</a>
             </div>
           </div>
         </li>
         <li class="services__item polygraphy">
           <div class="polygraphy__container">
-            <div class="polygraphy__wrapper">
-              <h3 class="section__subtitle section__subtitle--polygraphy polygraphy__subtitle">Оперативная полиграфия —
-                от
-                визитки до баннера</h3>
-              <p class="section__text polygraphy__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco labo&shy;ris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                reprehenderit
-                in voluptate velit esse&nbsp;cillum dolore eu fugiat nulla pariatur.</p>
-              <p class="section__text polygraphy__text">Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                qui
-                officia deserunt mollit anim id est laborum. Sed ut perspicia&shy;tis unde omnis iste natus error.</p>
+            <div class="polygraphy__wrapper revealator-slideright revealator-once lazy-bg">
+              <h3 class="section__subtitle section__subtitle--polygraphy polygraphy__subtitle">Оперативная полиграфия — от визитки до баннера</h3>
+              <p class="section__text polygraphy__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labo&shy;ris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse&nbsp;cillum dolore eu fugiat nulla pariatur.</p>
+              <p class="section__text polygraphy__text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspicia&shy;tis unde omnis iste natus error.</p>
             </div>
-            <div class="polygraphy__request request">
+            <div class="polygraphy__request request revealator-slideup revealator-once lazy-bg">
               <i class="request__question">Есть вопросы?</i>
               <p class="request__text">Оставьте заявку на&nbsp;консультацию</p>
               <form class="form" action="https://echo.htmlacademy.ru" method="post">
                 <label class="form__label input-data">
-                  <input class="input-data__field" type="text" name="name" placeholder="Имя" aria-label="Имя" required
-                         tabindex="14">
+                  <input class="input-data__field" type="text" name="name" placeholder="Имя" aria-label="Имя" required tabindex="14">
                 </label>
                 <label class="form__label input-data">
-                  <input class="input-data__field" type="tel" name="phone" placeholder="Телефон" aria-label="Телефон"
-                         required tabindex="15">
+                  <input class="input-data__field" type="tel" name="phone" placeholder="Телефон" aria-label="Телефон" required tabindex="15">
                 </label>
                 <button class="form__send button" type="submit" tabindex="16">Отправить</button>
               </form>
@@ -184,45 +167,51 @@
         </li>
       </ul>
     </section>
-    <section class="reviews">
+    <section class="reviews revealator-slideup revealator-once lazy-bg">
       <h2 class="section__title section__title--services reviews__title">3. Отзывы</h2>
       <div class="reviews__wrapper">
         <blockquote class="reviews__item">
           <picture>
-            <source type="image/webp"
-                    srcset="../img/photo-author-mobile@1x.webp 1x, ../img/photo-author-mobile@2x.webp 2x">
-            <img class="reviews__img" src="../img/photo-author-mobile@1x.png"
-                 srcset="../img/photo-author-mobile@2x.png 2x" alt="Фото ревьювера">
+            <source type="image/webp" data-srcset="../img/photo-author-mobile@1x.webp 1x, ../img/photo-author-mobile@2x.webp 2x">
+            <img class="reviews__img lazy" data-srcset="../img/photo-author-mobile@1x.png 1x, ../img/photo-author-mobile@2x.png 2x" alt="Фото ревьювера">
           </picture>
-          <p class="reviews__text">Обратился в компанию АртАктив за визитками. Это мой первый опыт, поэтому немного
-            нервничал, не знал, с чего начать. Остался доволен, потому что мне всё объяснили, показали и сделали по
-            высшему разряду. Советую!</p>
+          <noscript>
+            <picture>
+              <source type="image/webp" srcset="../img/photo-author-mobile@1x.webp 1x, ../img/photo-author-mobile@2x.webp 2x">
+              <img class="reviews__img" src="../img/photo-author-mobile@1x.png" srcset="../img/photo-author-mobile@2x.png 2x" alt="Фото ревьювера">
+            </picture>
+          </noscript>
+          <p class="reviews__text">Обратился в компанию АртАктив за визитками. Это мой первый опыт, поэтому немного нервничал, не знал, с чего начать. Остался доволен, потому что мне всё объяснили, показали и сделали по высшему разряду. Советую!</p>
           <cite class="reviews__author">Александров Максим, 24 года</cite>
           <a class="reviews__author-link" href="vk.com/mr.sharp">vk.com/mr.sharp</a>
         </blockquote>
         <blockquote class="reviews__item">
           <picture>
-            <source type="image/webp"
-                    srcset="../img/photo-author-mobile@1x.webp 1x, ../img/photo-author-mobile@2x.webp 2x">
-            <img class="reviews__img" src="../img/photo-author-mobile@1x.png"
-                 srcset="../img/photo-author-mobile@2x.png 2x" alt="Фото ревьювера">
+            <source type="image/webp" data-srcset="../img/photo-author-mobile@1x.webp 1x, ../img/photo-author-mobile@2x.webp 2x">
+            <img class="reviews__img lazy" data-srcset="../img/photo-author-mobile@1x.png 1x, ../img/photo-author-mobile@2x.png 2x" alt="Фото ревьювера">
           </picture>
-          <p class="reviews__text">Обратился в компанию АртАктив за визитками. Это мой первый опыт, поэтому немного
-            нервничал, не знал, с чего начать. Остался доволен, потому что мне всё объяснили, показали и сделали по
-            высшему разряду. Советую!</p>
+          <noscript>
+            <picture>
+              <source type="image/webp" srcset="../img/photo-author-mobile@1x.webp 1x, ../img/photo-author-mobile@2x.webp 2x">
+              <img class="reviews__img" src="../img/photo-author-mobile@1x.png" srcset="../img/photo-author-mobile@2x.png 2x" alt="Фото ревьювера">
+            </picture>
+          </noscript>
+          <p class="reviews__text">Обратился в компанию АртАктив за визитками. Это мой первый опыт, поэтому немного нервничал, не знал, с чего начать. Остался доволен, потому что мне всё объяснили, показали и сделали по высшему разряду. Советую!</p>
           <cite class="reviews__author">Александров Максим, 24 года</cite>
           <a class="reviews__author-link" href="vk.com/mr.sharp">vk.com/mr.sharp</a>
         </blockquote>
         <blockquote class="reviews__item">
           <picture>
-            <source type="image/webp"
-                    srcset="../img/photo-author-second@1x.webp 1x, ../img/photo-author-second@2x.webp 2x">
-            <img class="reviews__img" src="../img/photo-author-second@1x.png"
-                 srcset="../img/photo-author-second@2x.png 2x" alt="Фото ревьювера">
+            <source type="image/webp" data-srcset="../img/photo-author-second@1x.webp 1x, ../img/photo-author-second@2x.webp 2x">
+            <img class="reviews__img lazy" data-srcset="../img/photo-author-second@1x.png 1x, ../img/photo-author-second@2x.png 2x" alt="Фото ревьювера">
           </picture>
-          <p class="reviews__text">Обратился в компанию АртАктив за визитками. Это мой первый опыт, поэтому немного
-            нервничал, не знал, с чего начать. Остался доволен, потому что мне всё объяснили, показали и сделали по
-            высшему разряду. Советую!</p>
+          <noscript>
+            <picture>
+              <source type="image/webp" srcset="../img/photo-author-second@1x.webp 1x, ../img/photo-author-second@2x.webp 2x">
+              <img class="reviews__img" src="../img/photo-author-second@1x.png" srcset="../img/photo-author-second@2x.png 2x" alt="Фото ревьювера">
+            </picture>
+          </noscript>
+          <p class="reviews__text">Обратился в компанию АртАктив за визитками. Это мой первый опыт, поэтому немного нервничал, не знал, с чего начать. Остался доволен, потому что мне всё объяснили, показали и сделали по высшему разряду. Советую!</p>
           <cite class="reviews__author">Александров Максим, 24 года</cite>
           <a class="reviews__author-link" href="vk.com/mr.sharp" tabindex="15">vk.com/mr.sharp</a>
         </blockquote>
@@ -241,53 +230,44 @@
       </div>
 
     </section>
-    <section class="section faq">
+    <section class="section faq lazy-bg">
       <h2 class="section__title faq__title">4. Частые вопросы (FAQ)</h2>
-      <ul class="faq__list">
+      <ul class="faq__list revealator-zoomin revealator-once">
         <li class="faq__item faq__item--what-is-layout">
           <h3 class="section__subtitle faq__subtitle">Что такое макет?</h3>
-          <p class="section__text faq__text">Макет — это будущее печатное изделие в электронном формате. Верстают
-            (собирают) макет в специализированном программном обеспечении.</p>
+          <p class="section__text faq__text">Макет — это будущее печатное изделие в электронном формате. Верстают (собирают) макет в специализированном программном обеспечении.</p>
         </li>
         <li class="faq__item faq__item--layout-done">
           <h3 class="section__subtitle faq__subtitle">У меня есть готовый макет</h3>
-          <p class="section__text faq__text">Вы можете привезти его к нам в офис на любом удобном для вас носителе
-            (диск, флешка). В присутствии вас мы обработаем ваш макет и отправим его в производство.</p>
+          <p class="section__text faq__text">Вы можете привезти его к нам в офис на любом удобном для вас носителе (диск, флешка). В присутствии вас мы обработаем ваш макет и отправим его в производство.</p>
         </li>
         <li class="faq__item faq__item--no-layout">
           <h3 class="section__subtitle faq__subtitle">У меня нет макета</h3>
-          <p class="section__text faq__text">В нашем штате работают професиональные дизайнеры, которые с ваших слов или
-            в вашем присутствии сверстают макет, который после утверждения также будет отправлен в печать.</p>
+          <p class="section__text faq__text">В нашем штате работают професиональные дизайнеры, которые с ваших слов или в вашем присутствии сверстают макет, который после утверждения также будет отправлен в печать.</p>
         </li>
         <li class="faq__item faq__item--time-layout">
           <h3 class="section__subtitle faq__subtitle">Сколько времени занимает печать?</h3>
-          <p class="section__text faq__text">В том случае если изображение готово к печати, изготовление занимает около
-            3 часов. Также время изготовления зависит&nbsp;от нашей загруженности.</p>
+          <p class="section__text faq__text">В том случае если изображение готово к печати, изготовление занимает около 3 часов. Также время изготовления зависит&nbsp;от нашей загруженности.</p>
         </li>
         <li class="faq__item faq__item--office">
           <h3 class="section__subtitle faq__subtitle">Я не могу приехать к вам в&nbsp;офис</h3>
-          <p class="section__text faq__text">Отправьте нам изображение по электронной почте, укажите свой телефон. Мы
-            свяжемся с вами для уточнения деталей. Готовое изделие мы доставим вам курьером.</p>
+          <p class="section__text faq__text">Отправьте нам изображение по электронной почте, укажите свой телефон. Мы свяжемся с вами для уточнения деталей. Готовое изделие мы доставим вам курьером.</p>
         </li>
         <li class="faq__item faq__item--courier">
           <h3 class="section__subtitle faq__subtitle">Вызов курьера бесплатный?</h3>
-          <p class="section__text faq__text">В зависимости от соимости заказа, курьер&nbsp;может доставить вам продукцию
-            бесплатно (при соимости от 600 руб.) или от 150 руб. в пределах Ярославля и до 500&nbsp;руб. в пределах
-            Ярославской области.</p>
+          <p class="section__text faq__text">В зависимости от соимости заказа, курьер&nbsp;может доставить вам продукцию бесплатно (при соимости от 600 руб.) или от 150 руб. в пределах Ярославля и до 500&nbsp;руб. в пределах Ярославской области.</p>
         </li>
       </ul>
-      <div class="faq__form request request--faq">
+      <div class="faq__form request request--faq revealator-slideup revealator-once lazy-bg">
         <h3 class="visually-hidden">Форма для заказа</h3>
         <i class="request__question">Остались вопросы?</i>
         <p class="request__text request__text--faq">Оставьте заявку на&nbsp;консультацию</p>
         <form class="form form--faq" action="https://echo.htmlacademy.ru" method="post">
           <label class="form__label form__label--faq input-data">
-            <input class="input-data__field input-data__field--faq" type="text" name="name" placeholder="Имя"
-                   aria-label="Имя" required>
+            <input class="input-data__field input-data__field--faq" type="text" name="name" placeholder="Имя" aria-label="Имя" required>
           </label>
           <label class="form__label form__label--faq input-data">
-            <input class="input-data__field input-data__field--faq" type="tel" name="phone" placeholder="Телефон"
-                   aria-label="Телефон" required>
+            <input class="input-data__field input-data__field--faq" type="tel" name="phone" placeholder="Телефон" aria-label="Телефон" required>
           </label>
           <button class="button form__send form__send--faq" type="submit">Отправить</button>
         </form>
@@ -295,36 +275,41 @@
     </section>
     <section class="section contacts">
       <div class="contacts__container">
-        <div class="contacts__wrapper">
+        <div class="contacts__wrapper revealator-slideright revealator-once">
           <h2 class="section__title contacts__title">5. Контакты</h2>
           <ul class="contacts__list">
-            <li class="contacts__item contacts__item--address">
+            <li class="contacts__item contacts__item--address lazy-bg">
               <address class="contacts__address">г. Ярославль, проспект Октября, 88</address>
             </li>
-            <li class="contacts__item contacts__item--email">
+            <li class="contacts__item contacts__item--email lazy-bg">
               <a class="contacts__link" href="mailto:art-aktiv.76@mail.ru">art-aktiv.76@mail.ru</a>
             </li>
-            <li class="contacts__item contacts__item--phone">
+            <li class="contacts__item contacts__item--phone lazy-bg">
               <a class="contacts__tel" href="tel:89201488131">+7 (920) 148 81 31</a>
             </li>
           </ul>
         </div>
       </div>
       <div class="contacts__map map">
-        <iframe class="map__widget" src="https://yandex.ru/map-widget/v1/-/CCvu6Cii" allowfullscreen></iframe>
+        <iframe class="map__widget lazy" data-src="https://yandex.ru/map-widget/v1/-/CCvu6Cii" allowfullscreen></iframe>
         <picture>
-          <source type="image/webp" media="(min-width: 1170px)"
-                  srcset="../img/map-desktop@1x.webp 1x, ../img/map-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 780px)"
-                  srcset="../img/map-tablet@1x.webp 1x, ../img/map-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="../img/map-mobile@1x.webp 1x, ../img/map-mobile@2x.webp 2x">
-          <source media="(min-width: 1170px)"
-                  srcset="../img/map-desktop@1x.jpg 1x, ../img/map-desktop@2x.jpg 2x">
-          <source media="(min-width: 780px)"
-                  srcset="../img/map-tablet@1x.jpg 1x, ../img/map-tablet@2x.jpg 2x">
-          <img class="map__img" src="../img/map-mobile@1x.jpg" srcset="../img/map-mobile@2x.jpg 2x"
-               alt="г. Ярославль, проспект Октября, 88">
+          <source type="image/webp" media="(min-width: 1170px)" data-srcset="../img/map-desktop@1x.webp 1x, ../img/map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 780px)" data-srcset="../img/map-tablet@1x.webp 1x, ../img/map-tablet@2x.webp 2x">
+          <source type="image/webp" data-srcset="../img/map-mobile@1x.webp 1x, ../img/map-mobile@2x.webp 2x">
+          <source media="(min-width: 1170px)" data-srcset="../img/map-desktop@1x.jpg 1x, ../img/map-desktop@2x.jpg 2x">
+          <source media="(min-width: 780px)" data-srcset="../img/map-tablet@1x.jpg 1x, ../img/map-tablet@2x.jpg 2x">
+          <img class="map__img lazy" data-srcset="../img/map-mobile@1x.jpg 1x, ../img/map-mobile@2x.jpg 2x" alt="г. Ярославль, проспект Октября, 88">
         </picture>
+        <noscript>
+          <picture>
+            <source type="image/webp" media="(min-width: 1170px)" srcset="../img/map-desktop@1x.webp 1x, ../img/map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 780px)" srcset="../img/map-tablet@1x.webp 1x, ../img/map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="../img/map-mobile@1x.webp 1x, ../img/map-mobile@2x.webp 2x">
+            <source media="(min-width: 1170px)" srcset="../img/map-desktop@1x.jpg 1x, ../img/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 780px)" srcset="../img/map-tablet@1x.jpg 1x, ../img/map-tablet@2x.jpg 2x">
+            <img class="map__img" src="../img/map-mobile@1x.jpg" srcset="../img/map-mobile@2x.jpg 2x" alt="г. Ярославль, проспект Октября, 88">
+          </picture>
+        </noscript>
       </div>
     </section>
     <footer class="page-footer">
@@ -334,18 +319,16 @@
         <p class="page-footer__designed">Designed by Sergey Strogiy</p>
       </div>
     </footer>
-    <section class="modal request request--modal">
+    <section class="modal request request--modal lazy-bg">
       <h3 class="visually-hidden">Форма для заказа</h3>
       <i class="request__question">Остались вопросы?</i>
       <p class="request__text request__text--modal">Оставьте заявку на&nbsp;консультацию</p>
       <form class="form form--modal" action="https://echo.htmlacademy.ru" method="post">
         <label class="form__label form__label--modal input-data">
-          <input class="input-data__field input-data__field--modal" type="text" name="name" placeholder="Имя"
-                 aria-label="Имя" required>
+          <input class="input-data__field input-data__field--modal" type="text" name="name" placeholder="Имя" aria-label="Имя" required>
         </label>
         <label class="form__label form__label--modal input-data">
-          <input class="input-data__field input-data__field--modal" type="tel" name="phone" placeholder="Телефон"
-                 aria-label="Телефон" required>
+          <input class="input-data__field input-data__field--modal" type="tel" name="phone" placeholder="Телефон" aria-label="Телефон" required>
         </label>
         <button class="button form__send form__send--modal" type="submit">Отправить</button>
       </form>
@@ -353,10 +336,12 @@
     </section>
     <div class="overlay" tabindex="-1"></div>
   </main>
-  <script src="js/navmenu.min.js"></script>
   <script src="js/iepolyfills.min.js"></script>
   <script src="js/loadScripts.min.js"></script>
+  <script src="js/lazy.min.js"></script>
+  <script src="js/navmenu.min.js"></script>
   <script src="js/slider.min.js"></script>
   <script src="js/modal.min.js"></script>
+  <script src="js/fm.revealator.jquery.min.js"></script>
 </body>
 </html>

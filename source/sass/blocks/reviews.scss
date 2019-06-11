@@ -1,13 +1,16 @@
 .reviews {
   padding: 33px $mobile-indent 57px;
 
-  background-image: url("../img/bg-lines-mobile@1x.png");
   background-repeat: repeat-y;
   background-position: center;
   background-size: contain;
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/bg-lines-mobile@2x.png");
+  &.lazy-bg-loaded {
+    background-image: url("../img/bg-lines-mobile@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-lines-mobile@2x.png");
+    }
   }
 }
 
@@ -51,11 +54,14 @@
   .reviews {
     padding: 73px $tablet-indent 96px;
 
-    background-image: url("../img/bg-lines-tablet@1x.png");
     background-size: cover;
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-lines-tablet@2x.png");
+    &.lazy-bg-loaded {
+      background-image: url("../img/bg-lines-tablet@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-lines-tablet@2x.png");
+      }
     }
   }
 
@@ -90,11 +96,14 @@
     margin: 0 auto;
     padding: 131px $desktop-indent 125px;
 
-    background-image: url("../img/bg-lines-desktop@1x.png");
     background-size: cover;
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-lines-desktop@2x.png");
+    &.lazy-bg-loaded {
+      background-image: url("../img/bg-lines-desktop@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-lines-desktop@2x.png");
+      }
     }
   }
 
@@ -111,19 +120,21 @@
       content: "";
       position: absolute;
       top: 0;
-      width: 140px;
       bottom: 0;
-
       z-index: 1;
+
+      width: 140px;
     }
 
     &::after {
       left: 0;
+
       box-shadow: inset 43px 0 60px -23px $white;
     }
 
     &::before {
       right: 0;
+
       box-shadow: inset -43px 0 60px -23px $white;
     }
   }
