@@ -23,12 +23,17 @@
   .order {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
     align-items: baseline;
     padding: 32px 32px 19px 38px;
   }
 
   .order__question {
     margin-right: 37px;
+  }
+
+  .order__text {
+    margin-right: 10px;
   }
 
   .order__link {
