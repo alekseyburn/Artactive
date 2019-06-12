@@ -41,6 +41,7 @@
   .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     padding: 18px $tablet-indent;
   }

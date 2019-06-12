@@ -131,6 +131,7 @@
   .site-list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: baseline;
   }
 
@@ -144,6 +145,10 @@
 
     line-height: 16px;
     color: $white;
+
+    &--phone {
+      margin-right: 20px;
+    }
 
     &--call-request {
       padding: 8px 0;

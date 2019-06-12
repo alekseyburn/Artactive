@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
+  <meta name="Description" content="Лендинг копицентра «Artactive»">
   <title>Копицентр «Artactive»</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
@@ -15,6 +16,11 @@
   <link rel="preload" href="fonts/MullerHeavy.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/MullerMedium.woff2" as="font" crossorigin="anonymous">
   <script>document.documentElement.classList.remove("no-js");</script>
+  <script src="js/iepolyfills.min.js" async></script>
+  <script src="js/lazy.min.js" defer></script>
+  <script src="js/navmenu.min.js" defer></script>
+  <script src="js/modal.min.js" defer></script>
+
 </head>
 <body>
   <header class="page-header page-header--nojs lazy-bg">
@@ -43,7 +49,7 @@
           <li class="site-list__item"><a class="site-list__link site-list__link--call-request" href="/" tabindex="8">Заказать звонок</a></li>
         </ul>
       </nav>
-      <section class="promo revealator-slideup revealator-once">
+      <section class="promo">
         <b class="promo__slogan">Размер не&nbsp;имеет значения!</b>
         <h1 class="promo__title">Оперативная полиграфия и&nbsp;широкоформатная печать любого размера</h1>
         <a class="promo__link button" href="order.html" tabindex="9">Заказать печать</a>
@@ -80,8 +86,7 @@
       <ul class="services__list">
         <li class="services__item banners">
           <div class="banners__container">
-            <h3
-              class="section__subtitle section__subtitle--services banners__subtitle revealator-slideright revealator-once">Широкоформатная печать баннеров, растяжек, афиш</h3>
+            <h3 class="section__subtitle section__subtitle--services banners__subtitle revealator-slideright revealator-once">Широкоформатная печать баннеров, растяжек, афиш</h3>
             <ul class="banners__list revealator-slideright revealator-once">
               <li class="banners__item">подготовка макетов к печати, дизайн рекламных баннеров</li>
               <li class="banners__item">срочная печать за 3 часа</li>
@@ -130,7 +135,7 @@
             <div class="banners__order order revealator-slideright revealator-once">
               <i class="order__question">Есть вопросы?</i>
               <p class="order__text">Закажите консультацию</p>
-              <a class="order__link button button-js" href="order.html" tabindex="10">Заказать</a>
+              <a class="order__link button button-js" href="modal.html" tabindex="10">Заказать</a>
             </div>
           </div>
         </li>
@@ -138,7 +143,7 @@
           <div class="interior__container">
             <div class="interior__wrapper revealator-slideup revealator-once">
               <h3 class="section__subtitle section__subtitle--interior interior__subtitle">Широкоформатная печать для вашего интерьера</h3>
-              <p class="section__text interior__text">Печатаем&nbsp;широкоформатные&nbsp;фотографии на глянцевой и матовой фотобумаге разной плотности, на глянцевом и матовом холсте или на самоклеющейся пленке. также можем предложить обработку и редактирование ваших фотографий силами наших дизайнеров: композиции, фотоколлаж, ретушь, различные эффекты</p>
+              <p class="section__text interior__text">Печатаем&nbsp;широкоформатные&nbsp;фотогра&shy;фии на глянцевой и матовой фотобумаге разной плотности, на глянцевом и матовом холсте или на самоклеющейся пленке. также можем предложить обработку и редактирование ваших фотографий силами наших дизайнеров: композиции, фотоколлаж, ретушь, различные эффекты</p>
               <a class="interior__link button" href="order.html" tabindex="13">Оставить заявку</a>
             </div>
           </div>
@@ -182,7 +187,7 @@
             </picture>
           </noscript>
           <p class="reviews__text">Обратился в компанию АртАктив за визитками. Это мой первый опыт, поэтому немного нервничал, не знал, с чего начать. Остался доволен, потому что мне всё объяснили, показали и сделали по высшему разряду. Советую!</p>
-          <cite class="reviews__author">Александров Максим, 24 года</cite>
+          <cite class="reviews__author">Александров&nbsp;Максим,&nbsp;24&nbsp;года</cite>
           <a class="reviews__author-link" href="vk.com/mr.sharp">vk.com/mr.sharp</a>
         </blockquote>
         <blockquote class="reviews__item">
@@ -291,7 +296,7 @@
         </div>
       </div>
       <div class="contacts__map map">
-        <iframe class="map__widget lazy" data-src="https://yandex.ru/map-widget/v1/-/CCvu6Cii" allowfullscreen></iframe>
+        <iframe class="map__widget lazy" data-src="https://yandex.ru/map-widget/v1/-/CCvu6Cii" title="map" allowfullscreen></iframe>
         <picture>
           <source type="image/webp" media="(min-width: 1170px)" data-srcset="../img/map-desktop@1x.webp 1x, ../img/map-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width: 780px)" data-srcset="../img/map-tablet@1x.webp 1x, ../img/map-tablet@2x.webp 2x">
@@ -336,12 +341,8 @@
     </section>
     <div class="overlay" tabindex="-1"></div>
   </main>
-  <script src="js/iepolyfills.min.js"></script>
   <script src="js/loadScripts.min.js"></script>
-  <script src="js/lazy.min.js"></script>
-  <script src="js/navmenu.min.js"></script>
   <script src="js/slider.min.js"></script>
-  <script src="js/modal.min.js"></script>
   <script src="js/fm.revealator.jquery.min.js"></script>
 </body>
 </html>
