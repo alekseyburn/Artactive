@@ -16,24 +16,21 @@
   <link rel="preload" href="fonts/MullerHeavy.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/MullerMedium.woff2" as="font" crossorigin="anonymous">
   <script>document.documentElement.classList.remove("no-js");</script>
-  <script src="js/iepolyfills.min.js" async></script>
-  <script src="js/lazy.min.js" defer></script>
-  <script src="js/navmenu.min.js" defer></script>
-  <script src="js/modal.min.js" defer></script>
-
+  <script src="js/script.min.js" defer></script>
+  <script src="js/iepolyfills.min.js" defer></script>
 </head>
 <body>
   <header class="page-header page-header--nojs lazy-bg">
     <div class="page-header__wrapper lazy-bg">
       <a class="page-header__logo" href="index.html" tabindex="1">
         <picture>
-          <source type="image/webp" data-srcset="../img/logo@1x.webp 1x, ../img/logo@2x.webp 2x">
-          <img class="page-header__logo-image lazy" data-srcset="../img/logo@1x.png 1x, ../img/logo@2x.png 2x" alt="Копицентр «Artactive»">
+          <source type="image/webp" data-srcset="img/logo@1x.webp 1x, img/logo@2x.webp 2x">
+          <img class="page-header__logo-image lazy" data-src="img/logo@1x.png" data-srcset="img/logo@2x.png 2x" alt="Копицентр «Artactive»">
         </picture>
         <noscript>
           <picture>
-            <source type="image/webp" srcset="../img/logo@1x.webp 1x, ../img/logo@2x.webp 2x">
-            <img class="page-header__logo-image" src="../img/logo@1x.png" srcset="../img/logo@2x.png 2x" alt="Копицентр «Artactive»">
+            <source type="image/webp" srcset="img/logo@1x.webp 1x, img/logo@2x.webp 2x">
+            <img class="page-header__logo-image" src="img/logo@1x.png" srcset="img/logo@2x.png 2x" alt="Копицентр «Artactive»">
           </picture>
         </noscript>
       </a>
@@ -98,23 +95,23 @@
             <div class="banners__slider-wrapper revealator-slideup revealator-once">
               <figure class="banners__figure">
                 <picture>
-                  <source type="image/webp" media="(min-width: 1170px)" data-srcset="../img/photo-banner-desktop@1x.webp 1x, ../img/photo-banner-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 780px)" data-srcset="../img/photo-banner-tablet@1x.webp 1x, ../img/photo-banner-tablet@2x.webp 2x">
-                  <source type="image/webp" data-srcset="../img/photo-banner-mobile@1x.webp 1x, ../img/photo-banner-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1170px)" data-srcset="img/photo-banner-desktop@1x.webp 1x, img/photo-banner-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 780px)" data-srcset="img/photo-banner-tablet@1x.webp 1x, img/photo-banner-tablet@2x.webp 2x">
+                  <source type="image/webp" data-srcset="img/photo-banner-mobile@1x.webp 1x, img/photo-banner-mobile@2x.webp 2x">
 
-                  <source media="(min-width: 1170px)" data-srcset="../img/photo-banner-desktop@1x.png 1x, ../img/photo-banner-desktop@2x.png 2x">
-                  <source media="(min-width: 780px)" data-srcset="../img/photo-banner-tablet@1x.png 1x, ../img/photo-banner-tablet@2x.png 2x">
-                  <img class="banners__img lazy" data-srcset="../img/photo-banner-mobile@1x.jpg 1x, ../img/photo-banner-mobile@2x.jpg 2x" alt="Растяжка на ул. Ленина">
+                  <source media="(min-width: 1170px)" data-srcset="img/photo-banner-desktop@1x.png 1x, img/photo-banner-desktop@2x.png 2x">
+                  <source media="(min-width: 780px)" data-srcset="img/photo-banner-tablet@1x.png 1x, img/photo-banner-tablet@2x.png 2x">
+                  <img class="banners__img lazy" data-src="img/photo-banner-mobile@1x.jpg" data-srcset="img/photo-banner-mobile@2x.jpg 2x" alt="Растяжка на ул. Ленина">
                 </picture>
                 <noscript>
                   <picture>
-                    <source type="image/webp" media="(min-width: 1170px)" srcset="../img/photo-banner-desktop@1x.webp 1x, ../img/photo-banner-desktop@2x.webp 2x">
-                    <source type="image/webp" media="(min-width: 780px)" srcset="../img/photo-banner-tablet@1x.webp 1x, ../img/photo-banner-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="../img/photo-banner-mobile@1x.webp 1x, ../img/photo-banner-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 1170px)" srcset="img/photo-banner-desktop@1x.webp 1x, img/photo-banner-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 780px)" srcset="img/photo-banner-tablet@1x.webp 1x, img/photo-banner-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-banner-mobile@1x.webp 1x, img/photo-banner-mobile@2x.webp 2x">
 
-                    <source media="(min-width: 1170px)" srcset="../img/photo-banner-desktop@1x.png 1x, ../img/photo-banner-desktop@2x.png 2x">
-                    <source media="(min-width: 780px)" srcset="../img/photo-banner-tablet@1x.png 1x, ../img/photo-banner-tablet@2x.png 2x">
-                    <img class="banners__img" src="../img/photo-banner-mobile@1x.jpg" srcset="../img/photo-banner-mobile@2x.jpg 2x" alt="Растяжка на ул. Ленина">
+                    <source media="(min-width: 1170px)" srcset="img/photo-banner-desktop@1x.png 1x, img/photo-banner-desktop@2x.png 2x">
+                    <source media="(min-width: 780px)" srcset="img/photo-banner-tablet@1x.png 1x, img/photo-banner-tablet@2x.png 2x">
+                    <img class="banners__img" src="img/photo-banner-mobile@1x.jpg" srcset="img/photo-banner-mobile@2x.jpg 2x" alt="Растяжка на ул. Ленина">
                   </picture>
                 </noscript>
                 <figcaption class="banners__caption">Растяжка на ул. Ленина</figcaption>
@@ -122,12 +119,12 @@
               <div class="slider banners__btn-wrapper">
                 <button class="slider__btn slider__btn--prev" type="button" aria-label="Предыдущее фото" tabindex="11">
                   <svg class="slider__btn-icon" width="91" height="14">
-                    <use xlink:href="../img/sprite.svg#icon-left-arrow"></use>
+                    <use xlink:href="img/sprite.svg#icon-left-arrow"></use>
                   </svg>
                 </button>
                 <button class="slider__btn slider__btn--next" type="button" aria-label="Следующее фото" tabindex="12">
                   <svg class="slider__btn-icon" width="91" height="14">
-                    <use xlink:href="../img/sprite.svg#icon-right-arrow"></use>
+                    <use xlink:href="img/sprite.svg#icon-right-arrow"></use>
                   </svg>
                 </button>
               </div>
@@ -177,13 +174,13 @@
       <div class="reviews__wrapper">
         <blockquote class="reviews__item">
           <picture>
-            <source type="image/webp" data-srcset="../img/photo-author-mobile@1x.webp 1x, ../img/photo-author-mobile@2x.webp 2x">
-            <img class="reviews__img lazy" data-srcset="../img/photo-author-mobile@1x.png 1x, ../img/photo-author-mobile@2x.png 2x" alt="Фото ревьювера">
+            <source type="image/webp" data-srcset="img/photo-author-mobile@1x.webp 1x, img/photo-author-mobile@2x.webp 2x">
+            <img class="reviews__img lazy" data-src="img/photo-author-mobile@1x.png" data-srcset="img/photo-author-mobile@2x.png 2x" alt="Фото ревьювера">
           </picture>
           <noscript>
             <picture>
-              <source type="image/webp" srcset="../img/photo-author-mobile@1x.webp 1x, ../img/photo-author-mobile@2x.webp 2x">
-              <img class="reviews__img" src="../img/photo-author-mobile@1x.png" srcset="../img/photo-author-mobile@2x.png 2x" alt="Фото ревьювера">
+              <source type="image/webp" srcset="img/photo-author-mobile@1x.webp 1x, img/photo-author-mobile@2x.webp 2x">
+              <img class="reviews__img" src="img/photo-author-mobile@1x.png" srcset="img/photo-author-mobile@2x.png 2x" alt="Фото ревьювера">
             </picture>
           </noscript>
           <p class="reviews__text">Обратился в компанию АртАктив за визитками. Это мой первый опыт, поэтому немного нервничал, не знал, с чего начать. Остался доволен, потому что мне всё объяснили, показали и сделали по высшему разряду. Советую!</p>
@@ -192,13 +189,13 @@
         </blockquote>
         <blockquote class="reviews__item">
           <picture>
-            <source type="image/webp" data-srcset="../img/photo-author-mobile@1x.webp 1x, ../img/photo-author-mobile@2x.webp 2x">
-            <img class="reviews__img lazy" data-srcset="../img/photo-author-mobile@1x.png 1x, ../img/photo-author-mobile@2x.png 2x" alt="Фото ревьювера">
+            <source type="image/webp" data-srcset="img/photo-author-mobile@1x.webp 1x, img/photo-author-mobile@2x.webp 2x">
+            <img class="reviews__img lazy" data-src="img/photo-author-mobile@1x.png" data-srcset="img/photo-author-mobile@2x.png 2x" alt="Фото ревьювера">
           </picture>
           <noscript>
             <picture>
-              <source type="image/webp" srcset="../img/photo-author-mobile@1x.webp 1x, ../img/photo-author-mobile@2x.webp 2x">
-              <img class="reviews__img" src="../img/photo-author-mobile@1x.png" srcset="../img/photo-author-mobile@2x.png 2x" alt="Фото ревьювера">
+              <source type="image/webp" srcset="img/photo-author-mobile@1x.webp 1x, img/photo-author-mobile@2x.webp 2x">
+              <img class="reviews__img" src="img/photo-author-mobile@1x.png" srcset="img/photo-author-mobile@2x.png 2x" alt="Фото ревьювера">
             </picture>
           </noscript>
           <p class="reviews__text">Обратился в компанию АртАктив за визитками. Это мой первый опыт, поэтому немного нервничал, не знал, с чего начать. Остался доволен, потому что мне всё объяснили, показали и сделали по высшему разряду. Советую!</p>
@@ -207,13 +204,13 @@
         </blockquote>
         <blockquote class="reviews__item">
           <picture>
-            <source type="image/webp" data-srcset="../img/photo-author-second@1x.webp 1x, ../img/photo-author-second@2x.webp 2x">
-            <img class="reviews__img lazy" data-srcset="../img/photo-author-second@1x.png 1x, ../img/photo-author-second@2x.png 2x" alt="Фото ревьювера">
+            <source type="image/webp" data-srcset="img/photo-author-second@1x.webp 1x, img/photo-author-second@2x.webp 2x">
+            <img class="reviews__img lazy" data-src="img/photo-author-second@1x.png" data-srcset="img/photo-author-second@2x.png 2x" alt="Фото ревьювера">
           </picture>
           <noscript>
             <picture>
-              <source type="image/webp" srcset="../img/photo-author-second@1x.webp 1x, ../img/photo-author-second@2x.webp 2x">
-              <img class="reviews__img" src="../img/photo-author-second@1x.png" srcset="../img/photo-author-second@2x.png 2x" alt="Фото ревьювера">
+              <source type="image/webp" srcset="img/photo-author-second@1x.webp 1x, img/photo-author-second@2x.webp 2x">
+              <img class="reviews__img" src="img/photo-author-second@1x.png" srcset="img/photo-author-second@2x.png 2x" alt="Фото ревьювера">
             </picture>
           </noscript>
           <p class="reviews__text">Обратился в компанию АртАктив за визитками. Это мой первый опыт, поэтому немного нервничал, не знал, с чего начать. Остался доволен, потому что мне всё объяснили, показали и сделали по высшему разряду. Советую!</p>
@@ -224,12 +221,12 @@
       <div class="slider reviews__btn-wrapper">
         <button class="slider__btn slider__btn--prev" type="button" aria-label="Предыдущий отзыв">
           <svg class="slider__btn-icon" width="91" height="14">
-            <use xlink:href="../img/sprite.svg#icon-left-arrow"></use>
+            <use xlink:href="img/sprite.svg#icon-left-arrow"></use>
           </svg>
         </button>
         <button class="slider__btn slider__btn--next" type="button" aria-label="Следующий отзыв">
           <svg class="slider__btn-icon" width="91" height="14">
-            <use xlink:href="../img/sprite.svg#icon-right-arrow"></use>
+            <use xlink:href="img/sprite.svg#icon-right-arrow"></use>
           </svg>
         </button>
       </div>
@@ -298,21 +295,21 @@
       <div class="contacts__map map">
         <iframe class="map__widget lazy" data-src="https://yandex.ru/map-widget/v1/-/CCvu6Cii" title="map" allowfullscreen></iframe>
         <picture>
-          <source type="image/webp" media="(min-width: 1170px)" data-srcset="../img/map-desktop@1x.webp 1x, ../img/map-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 780px)" data-srcset="../img/map-tablet@1x.webp 1x, ../img/map-tablet@2x.webp 2x">
-          <source type="image/webp" data-srcset="../img/map-mobile@1x.webp 1x, ../img/map-mobile@2x.webp 2x">
-          <source media="(min-width: 1170px)" data-srcset="../img/map-desktop@1x.jpg 1x, ../img/map-desktop@2x.jpg 2x">
-          <source media="(min-width: 780px)" data-srcset="../img/map-tablet@1x.jpg 1x, ../img/map-tablet@2x.jpg 2x">
-          <img class="map__img lazy" data-srcset="../img/map-mobile@1x.jpg 1x, ../img/map-mobile@2x.jpg 2x" alt="г. Ярославль, проспект Октября, 88">
+          <source type="image/webp" media="(min-width: 1170px)" data-srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 780px)" data-srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+          <source type="image/webp" data-srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+          <source media="(min-width: 1170px)" data-srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+          <source media="(min-width: 780px)" data-srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+          <img class="map__img lazy" data-src="img/map-mobile@1x.jpg" data-srcset="img/map-mobile@2x.jpg 2x" alt="г. Ярославль, проспект Октября, 88">
         </picture>
         <noscript>
           <picture>
-            <source type="image/webp" media="(min-width: 1170px)" srcset="../img/map-desktop@1x.webp 1x, ../img/map-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 780px)" srcset="../img/map-tablet@1x.webp 1x, ../img/map-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="../img/map-mobile@1x.webp 1x, ../img/map-mobile@2x.webp 2x">
-            <source media="(min-width: 1170px)" srcset="../img/map-desktop@1x.jpg 1x, ../img/map-desktop@2x.jpg 2x">
-            <source media="(min-width: 780px)" srcset="../img/map-tablet@1x.jpg 1x, ../img/map-tablet@2x.jpg 2x">
-            <img class="map__img" src="../img/map-mobile@1x.jpg" srcset="../img/map-mobile@2x.jpg 2x" alt="г. Ярославль, проспект Октября, 88">
+            <source type="image/webp" media="(min-width: 1170px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 780px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+            <source media="(min-width: 1170px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 780px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+            <img class="map__img" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="г. Ярославль, проспект Октября, 88">
           </picture>
         </noscript>
       </div>
@@ -341,8 +338,5 @@
     </section>
     <div class="overlay" tabindex="-1"></div>
   </main>
-  <script src="js/loadScripts.min.js"></script>
-  <script src="js/slider.min.js"></script>
-  <script src="js/fm.revealator.jquery.min.js"></script>
 </body>
 </html>
